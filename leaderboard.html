@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - SegBook</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+            padding-top: 80px; /* Offset for fixed navbar */
+        }
+        .section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .filter-container {
+            margin-bottom: 20px;
+        }
+        .filter-container select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .table-container {
+            max-height: 600px; /* Adjust this value as needed */
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 18px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SegBook</h1>
+        <p>Medical Segmentation CookBook</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="datasets.html">Datasets</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="tools.html">Tools</a>
+    </nav>
+    <div class="container">
+        <div class="section">
+            <h2>Leaderboard</h2>
+            <div class="filter-container">
+                <label for="modalityFilter">Filter by Modality:</label>
+                <select id="modalityFilter" onchange="filterTable()">
+                    <option value="">All</option>
+<option value="ADC MRI">ADC MRI</option>
+<option value="DE MRI">DE MRI</option>
+<option value="DWI MRI">DWI MRI</option>
+<option value="FLAIR MRI">FLAIR MRI</option>
+<option value="MRI">MRI</option>
+<option value="PD MRI">PD MRI</option>
+<option value="T1 MRI">T1 MRI</option>
+<option value="T1 weighted MRI">T1 weighted MRI</option>
+<option value="T1Gd MRI">T1Gd MRI</option>
+<option value="T1ce MRI">T1ce MRI</option>
+<option value="T2 MRI">T2 MRI</option>
+<option value="T2 weighted MRI">T2 weighted MRI</option>
+<option value="ADC MRI">ADC MRI</option>
+<option value="CMR MRI">CMR MRI</option>
+<option value="CT">CT</option>
+<option value="FLAIR MRI">FLAIR MRI</option>
+<option value="LGE MRI">LGE MRI</option>
+<option value="MRI">MRI</option>
+<option value="T1 MRI">T1 MRI</option>
+<option value="T1 weighted MRI">T1 weighted MRI</option>
+<option value="T2 MRI">T2 MRI</option>
+<option value="T2 weighted MRI">T2 weighted MRI</option>
+<option value="TOF MRI">TOF MRI</option>
+<option value="Ultrasound">Ultrasound</option>
+
+                </select>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Source dataset</th>
+                            <th>Modality MR Sequence</th>
+                            <th>Is totalseg</th>
+                            <th>Is structure</th>
+                            <th>Is lesion</th>
+                            <th>Train cases</th>
+                            <th>Dice nnunet</th>
+                            <th>Dice base</th>
+                            <th>Dice base_ft</th>
+                            <th>Dice large</th>
+                            <th>Dice large_ft</th>
+                            <th>Dice huge</th>
+                            <th>Dice huge_ft</th>
+                            <th>Modality</th>
+                            <th>Total case</th>
+                            <th>benefit_base_ft</th>
+                            <th>benefit_large_ft</th>
+                            <th>benefit_huge_ft</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+<tr><td>0</td><td>Task001_BrainTumour</td><td>FLAIR MRI, T1 weighted MRI, T1Gd MRI, T2 weighted MRI</td><td>0.0</td><td>0.0</td><td>1.0</td><td>387.0</td><td>73.32946334862069</td><td>72.5791400449827</td><td>72.97283891107267</td><td>73.00927554567474</td><td>73.59965073217992</td><td>73.06595584602076</td><td>73.59783225259515</td><td>MRI</td><td>483.75</td><td>0.3936988660899772</td><td>0.5903751865051845</td><td>0.5318764065743977</td></tr>
+<tr><td>1</td><td>Task002_Heart</td><td>MRI</td><td>1.0</td><td>1.0</td><td>0.0</td><td>16.0</td><td>93.895558575</td><td>93.79419175</td><td>93.967959175</td><td>93.8225133</td><td>93.9731457</td><td>93.821466975</td><td>93.871670875</td><td>MRI</td><td>20.0</td><td>0.1737674250000083</td><td>0.1506324000000063</td><td>0.0502039000000138</td></tr>
+<tr><td>2</td><td>Task003_Liver</td><td>CT</td><td>0.5</td><td>0.5</td><td>0.5</td><td>104.0</td><td>83.62672241132076</td><td>82.64396831509434</td><td>85.45997727884615</td><td>84.48020376538463</td><td>84.70653397692308</td><td>84.49385840576923</td><td>85.35710767500001</td><td>CT</td><td>130.0</td><td>2.8160089637518126</td><td>0.2263302115384533</td><td>0.8632492692307778</td></tr>
+<tr><td>3</td><td>Task004_Hippocampus</td><td>MRI</td><td>0.0</td><td>1.0</td><td>0.0</td><td>208.0</td><td>89.23167205384615</td><td>88.9209373451923</td><td>88.96382134615384</td><td>89.18573148173076</td><td>89.13324775865385</td><td>89.34967422980769</td><td>89.19006369423076</td><td>MRI</td><td>260.0</td><td>0.0428840009615356</td><td>-0.0524837230769037</td><td>-0.159610535576931</td></tr>
+<tr><td>4</td><td>Task005_Prostate</td><td>T2 MRI, ADC MRI</td><td>0.5</td><td>1.0</td><td>0.0</td><td>25.0</td><td>81.39766837142858</td><td>78.51975300714285</td><td>81.12123027857142</td><td>80.03790122142857</td><td>81.60687535714285</td><td>79.59649799285714</td><td>81.53254507857143</td><td>MRI</td><td>31.25</td><td>2.601477271428564</td><td>1.568974135714285</td><td>1.9360470857142928</td></tr>
+<tr><td>5</td><td>Task006_Lung</td><td>CT</td><td>0.0</td><td>0.0</td><td>1.0</td><td>50.0</td><td>71.31549716153846</td><td>70.02950154615384</td><td>73.42668770769231</td><td>62.49548471538461</td><td>70.40328350769231</td><td>61.96828513076923</td><td>72.59395652307693</td><td>CT</td><td>62.5</td><td>3.397186161538471</td><td>7.907798792307695</td><td>10.625671392307694</td></tr>
+<tr><td>6</td><td>Task007_Pancreas</td><td>CT</td><td>0.5</td><td>0.5</td><td>0.5</td><td>224.0</td><td>64.70323707280701</td><td>66.06893446842106</td><td>67.91295453684211</td><td>66.40934244210527</td><td>67.46161000701754</td><td>66.28991028157895</td><td>68.3931456377193</td><td>CT</td><td>280.0</td><td>1.8440200684210453</td><td>1.0522675649122704</td><td>2.1032353561403454</td></tr>
+<tr><td>7</td><td>Task008_HepaticVessel</td><td>CT</td><td>0.0</td><td>0.5</td><td>0.5</td><td>242.0</td><td>69.87783040081966</td><td>70.74598809344262</td><td>70.46971605327869</td><td>70.7914810352459</td><td>70.83058364180329</td><td>71.22606241639345</td><td>71.37123477786885</td><td>CT</td><td>302.5</td><td>-0.2762720401639313</td><td>0.0391026065573925</td><td>0.145172361475403</td></tr>
+<tr><td>8</td><td>Task009_Spleen</td><td>CT</td><td>1.0</td><td>1.0</td><td>0.0</td><td>32.0</td><td>95.53238662222222</td><td>96.3985410111111</td><td>96.81275873333334</td><td>95.14415376666666</td><td>96.9045833</td><td>87.58927718888889</td><td>96.90480465555557</td><td>CT</td><td>40.0</td><td>0.4142177222222329</td><td>1.7604295333333368</td><td>9.315527466666666</td></tr>
+<tr><td>9</td><td>Task010_Colon</td><td>CT</td><td>0.0</td><td>0.0</td><td>1.0</td><td>100.0</td><td>46.87709452692308</td><td>44.326289800000005</td><td>48.369731123076924</td><td>46.33713936923077</td><td>51.62813005384616</td><td>41.36166153076923</td><td>49.98657310769231</td><td>CT</td><td>125.0</td><td>4.0434413230769195</td><td>5.290990684615387</td><td>8.624911576923076</td></tr>
+<tr><td>10</td><td>Task011_BTCV</td><td>CT</td><td>1.0</td><td>1.0</td><td>0.0</td><td>24.0</td><td>84.24232675448718</td><td>84.2473442897436</td><td>85.04180661474359</td><td>84.50260250512821</td><td>86.19865657884615</td><td>85.03654298333333</td><td>85.83796055833334</td><td>CT</td><td>30.0</td><td>0.7944623249999978</td><td>1.6960540737179457</td><td>0.8014175750000021</td></tr>
+<tr><td>11</td><td>Task013_ACDC</td><td>MRI</td><td>0.6666666666666666</td><td>1.0</td><td>0.0</td><td>160.0</td><td>92.26019409583334</td><td>92.06098499666668</td><td>92.55098122333334</td><td>92.68876118416668</td><td>92.78614004166668</td><td>92.65716199083334</td><td>92.81209670583333</td><td>MRI</td><td>200.0</td><td>0.489996226666662</td><td>0.0973788575000043</td><td>0.1549347149999818</td></tr>
+<tr><td>12</td><td>Task019_BraTS21</td><td>T1 MRI, T1ce MRI, T2 MRI, FLAIR MRI</td><td>0.0</td><td>0.0</td><td>1.0</td><td>1000.0</td><td>84.5707799563418</td><td>84.66221411989247</td><td>84.59856942577181</td><td>84.73759734490616</td><td>85.00527020215054</td><td>84.85433688926175</td><td>85.10305309825269</td><td>MRI</td><td>1250.0</td><td>-0.0636446941206543</td><td>0.2676728572443778</td><td>0.2487162089909418</td></tr>
+<tr><td>13</td><td>Task029_LITS</td><td>CT</td><td>0.5</td><td>0.5</td><td>0.5</td><td>104.0</td><td>83.09772392075472</td><td>83.21856937735849</td><td>85.50180663076922</td><td>85.07776097115385</td><td>86.37278736346154</td><td>85.03114448076923</td><td>85.19250486346154</td><td>CT</td><td>130.0</td><td>2.283237253410732</td><td>1.2950263923076903</td><td>0.1613603826923082</td></tr>
+<tr><td>14</td><td>Task034_Instance22</td><td>CT</td><td>0.0</td><td>1.0</td><td>0.0</td><td>80.0</td><td>67.49475942000001</td><td>68.61315035999999</td><td>67.54790706</td><td>69.52841924</td><td>69.95799214</td><td>69.550956155</td><td>70.26591694999999</td><td>CT</td><td>100.0</td><td>-1.0652432999999917</td><td>0.4295728999999966</td><td>0.7149607949999961</td></tr>
+<tr><td>15</td><td>Task036_KiPA22</td><td>CT</td><td>0.0</td><td>0.75</td><td>0.25</td><td>56.0</td><td>90.09980533035714</td><td>90.04365820714285</td><td>90.30732629464286</td><td>90.15625379821428</td><td>90.29047774642856</td><td>90.00079427857143</td><td>90.434997575</td><td>CT</td><td>70.0</td><td>0.2636680875000081</td><td>0.1342239482142844</td><td>0.4342032964285636</td></tr>
+<tr><td>16</td><td>Task037_CHAOS_Task_3_5_Variant1</td><td>MRI, MRI</td><td>1.0</td><td>1.0</td><td>0.0</td><td>32.0</td><td>86.193953296875</td><td>84.743245584375</td><td>87.075158875</td><td>86.292842196875</td><td>87.27187454062499</td><td>85.879381815625</td><td>87.43603999375</td><td>MRI</td><td>40.0</td><td>2.331913290624996</td><td>0.9790323437499922</td><td>1.556658178125005</td></tr>
+<tr><td>17</td><td>Task039_Parse22</td><td>CT</td><td>1.0</td><td>1.0</td><td>0.0</td><td>80.0</td><td>86.948471035</td><td>86.90972332999999</td><td>86.918929205</td><td>86.628245905</td><td>86.866781415</td><td>86.60875636</td><td>86.81385492000001</td><td>CT</td><td>100.0</td><td>0.0092058750000063</td><td>0.2385355100000055</td><td>0.2050985600000103</td></tr>
+<tr><td>18</td><td>Task040_ATM22</td><td>CT</td><td>0.0</td><td>1.0</td><td>0.0</td><td>240.0</td><td>91.08456373333334</td><td>91.084550725</td><td>91.477075405</td><td>91.098132275</td><td>91.77566550333331</td><td>91.15951775833334</td><td>91.742079305</td><td>CT</td><td>300.0</td><td>0.3925246800000082</td><td>0.6775332283333313</td><td>0.5825615466666676</td></tr>
+<tr><td>19</td><td>Task041_ISLES2022</td><td>ADC MRI, DWI MRI</td><td>0.0</td><td>0.0</td><td>1.0</td><td>200.0</td><td>78.36017338571429</td><td>78.02048058367347</td><td>78.66477179387755</td><td>79.19432723469387</td><td>78.7760822244898</td><td>79.28580153877552</td><td>78.98218305510204</td><td>MRI</td><td>250.0</td><td>0.6442912102040736</td><td>-0.4182450102040747</td><td>-0.3036184836734747</td></tr>
+<tr><td>20</td><td>Task044_CrossMoDA23</td><td>MRI</td><td>0.0</td><td>0.3333333333333333</td><td>0.6666666666666666</td><td>181.0</td><td>79.60228118540147</td><td>79.32282555514705</td><td>79.65381977153285</td><td>79.43342250220587</td><td>79.53753852867646</td><td>79.15130370583942</td><td>79.8665037948905</td><td>MRI</td><td>226.25</td><td>0.3309942163858039</td><td>0.1041160264705922</td><td>0.7152000890510806</td></tr>
+<tr><td>21</td><td>Task050_LAScarQS22_task1</td><td>LGE MRI</td><td>0.5</td><td>1.0</td><td>0.0</td><td>48.0</td><td>71.54797525</td><td>71.936477</td><td>72.74096846666667</td><td>71.04044681250001</td><td>71.60434987083333</td><td>71.30037652083332</td><td>71.4362945375</td><td>MRI</td><td>60.0</td><td>0.8044914666666756</td><td>0.5639030583333238</td><td>0.1359180166666789</td></tr>
+<tr><td>22</td><td>Task051_LAScarQS22_task2</td><td>LGE MRI</td><td>1.0</td><td>1.0</td><td>0.0</td><td>104.0</td><td>91.75648972307692</td><td>92.01008328461538</td><td>92.01572419615384</td><td>92.0440239576923</td><td>92.08614011923078</td><td>92.07824522307692</td><td>92.05906613076922</td><td>MRI</td><td>130.0</td><td>0.0056409115384639</td><td>0.0421161615384733</td><td>-0.0191790923076951</td></tr>
+<tr><td>23</td><td>Task104_Colorectal_Liver_Metastases</td><td>CT</td><td>0.5</td><td>0.5</td><td>0.5</td><td>157.0</td><td>84.85447815500001</td><td>84.189340955</td><td>85.00522614249999</td><td>84.74619414</td><td>85.28828362624999</td><td>85.37594360125</td><td>85.31618496</td><td>CT</td><td>196.25</td><td>0.8158851874999868</td><td>0.5420894862499921</td><td>-0.0597586412499993</td></tr>
+<tr><td>24</td><td>Task106_AIIB2023</td><td>CT</td><td>0.0</td><td>1.0</td><td>0.0</td><td>96.0</td><td>93.5345297</td><td>93.526517625</td><td>93.5883348875</td><td>93.54327029166666</td><td>93.77199568333332</td><td>93.6189860375</td><td>93.9146702875</td><td>CT</td><td>120.0</td><td>0.0618172625000141</td><td>0.2287253916666713</td><td>0.2956842499999794</td></tr>
+<tr><td>25</td><td>Task107_HCC-TACE-Seg</td><td>CT</td><td>0.5</td><td>0.75</td><td>0.25</td><td>179.0</td><td>61.20888468388888</td><td>61.31719714055556</td><td>62.30140790777777</td><td>61.92660645777778</td><td>63.64801479444445</td><td>61.518871033333326</td><td>63.42239482055555</td><td>CT</td><td>223.75</td><td>0.9842107672222156</td><td>1.72140833666667</td><td>1.9035237872222268</td></tr>
+<tr><td>26</td><td>Task108_ISBI-MR-Prostate-2013</td><td>T2 weighted MRI</td><td>0.0</td><td>1.0</td><td>0.0</td><td>63.0</td><td>84.62576501875</td><td>82.552523521875</td><td>83.150288884375</td><td>82.187200109375</td><td>83.049131953125</td><td>82.05156174375</td><td>84.326228471875</td><td>MRI</td><td>78.75</td><td>0.5977653624999988</td><td>0.8619318437499999</td><td>2.2746667281249984</td></tr>
+<tr><td>27</td><td>Task109_SMILE-UHURA2023</td><td>TOF MRI</td><td>0.0</td><td>1.0</td><td>0.0</td><td>9.0</td><td>82.71350506666667</td><td>83.6273417</td><td>83.85196926666667</td><td>83.32526713333333</td><td>83.65927230000001</td><td>82.42071913333332</td><td>82.90427583333333</td><td>MRI</td><td>11.25</td><td>0.224627566666669</td><td>0.3340051666666852</td><td>0.4835567000000083</td></tr>
+<tr><td>28</td><td>Task110_ISPY1-Tumor-SEG-Radiomics</td><td>ADC MRI, ADC MRI, ADC MRI</td><td>0.0</td><td>0.0</td><td>1.0</td><td>128.0</td><td>71.60514185151514</td><td>72.02070864545453</td><td>73.4158952090909</td><td>73.83415183636363</td><td>72.00324101818182</td><td>72.75242993636364</td><td>73.38950611212121</td><td>MRI</td><td>160.0</td><td>1.395186563636372</td><td>-1.830910818181806</td><td>0.6370761757575707</td></tr>
+<tr><td>29</td><td>Task111_LUAD-CT-Survival</td><td>CT</td><td>0.0</td><td>0.0</td><td>1.0</td><td>32.0</td><td>68.9935255</td><td>58.3225292875</td><td>72.364387325</td><td>67.173617575</td><td>74.000176475</td><td>65.115779675</td><td>73.8890144125</td><td>CT</td><td>40.0</td><td>14.041858037499992</td><td>6.826558900000009</td><td>8.773234737500005</td></tr>
+<tr><td>30</td><td>Task112_PROSTATEx-Seg-HiRes</td><td>T2 weighted MRI</td><td>0.0</td><td>1.0</td><td>0.0</td><td>52.0</td><td>93.87345274285714</td><td>93.78125408571428</td><td>93.8715907</td><td>93.7909804</td><td>93.82525930714284</td><td>93.35279242142856</td><td>94.00734346428573</td><td>MRI</td><td>65.0</td><td>0.090336614285718</td><td>0.0342789071428484</td><td>0.6545510428571362</td></tr>
+<tr><td>31</td><td>Task113_PROSTATEx-Seg-Zones</td><td>T2 weighted MRI</td><td>0.0</td><td>1.0</td><td>0.0</td><td>78.0</td><td>75.34586016125</td><td>74.46111850625</td><td>75.02349736</td><td>74.47482212</td><td>75.2226522625</td><td>74.37813455875</td><td>75.86994223875</td><td>MRI</td><td>97.5</td><td>0.5623788537499905</td><td>0.7478301425000069</td><td>1.4918076799999938</td></tr>
+<tr><td>32</td><td>Task114_Prostate-Anatomical-Edge-Cases</td><td>CT</td><td>0.2</td><td>1.0</td><td>0.0</td><td>104.0</td><td>64.93264504666666</td><td>72.68638819037038</td><td>74.52006889555555</td><td>79.22493407851852</td><td>81.52358004296296</td><td>73.4694957162963</td><td>80.01507973407408</td><td>CT</td><td>130.0</td><td>1.8336807051851736</td><td>2.2986459644444466</td><td>6.545584017777784</td></tr>
+<tr><td>33</td><td>Task166_LongitudinalMultipleSclerosisLesionSegmentation</td><td>FLAIR MRI, T1Gd MRI, PD MRI, T2 MRI</td><td>0.0</td><td>0.0</td><td>1.0</td><td>16.0</td><td>80.45169324</td><td>80.46312156</td><td>80.99983406</td><td>80.12497486</td><td>80.83527924</td><td>80.33202166</td><td>80.07778684</td><td>MRI</td><td>20.0</td><td>0.536712499999993</td><td>0.7103043800000108</td><td>-0.2542348199999935</td></tr>
+<tr><td>34</td><td>Task502_WMH</td><td>FLAIR MRI, T1 MRI</td><td>0.0</td><td>1.0</td><td>0.0</td><td>48.0</td><td>61.36849654</td><td>54.266238475</td><td>55.748492324999994</td><td>55.925813559999995</td><td>57.951700565</td><td>55.80638357</td><td>62.035303345</td><td>MRI</td><td>60.0</td><td>1.4822538499999922</td><td>2.0258870050000013</td><td>6.228919775000001</td></tr>
+<tr><td>35</td><td>Task503_BraTs2015</td><td>FLAIR MRI, T1 MRI, T1 weighted MRI, T2 MRI</td><td>0.0</td><td>0.25</td><td>0.75</td><td>219.0</td><td>60.42632299726028</td><td>61.83161353192488</td><td>61.565519391588786</td><td>61.49256507323944</td><td>61.92485152723005</td><td>61.82079569859155</td><td>61.84499237652582</td><td>MRI</td><td>273.75</td><td>-0.2660941403360937</td><td>0.4322864539906064</td><td>0.0241966779342703</td></tr>
+<tr><td>36</td><td>Task504_ATLAS</td><td>T1 weighted MRI</td><td>0.0</td><td>0.0</td><td>1.0</td><td>524.0</td><td>65.06525434656488</td><td>65.05250164198473</td><td>65.34958268625955</td><td>65.39947468015266</td><td>66.1198113572519</td><td>66.83548830916031</td><td>67.06024890305343</td><td>MRI</td><td>655.0</td><td>0.2970810442748188</td><td>0.7203366770992403</td><td>0.2247605938931229</td></tr>
+<tr><td>37</td><td>Task507_Myops2020</td><td>MRI, DE MRI, T2 MRI</td><td>0.4</td><td>0.8</td><td>0.2</td><td>20.0</td><td>73.197062316</td><td>71.24222814</td><td>72.16917144</td><td>71.54709638</td><td>73.08173339199999</td><td>70.589992904</td><td>72.85527074</td><td>MRI</td><td>25.0</td><td>0.9269433000000048</td><td>1.5346370119999904</td><td>2.2652778359999957</td></tr>
+<tr><td>38</td><td>Task511_ATLAS2023</td><td>T1 weighted MRI</td><td>0.5</td><td>0.5</td><td>0.5</td><td>48.0</td><td>75.95910342500001</td><td>75.71694984166668</td><td>76.11543906666667</td><td>76.74411451666667</td><td>78.29768709166667</td><td>76.52181556666666</td><td>80.03259287499999</td><td>MRI</td><td>60.0</td><td>0.3984892249999916</td><td>1.553572575000004</td><td>3.5107773083333313</td></tr>
+<tr><td>39</td><td>Task525_CMRxMotions</td><td>CMR MRI</td><td>1.0</td><td>1.0</td><td>0.0</td><td>111.0</td><td>90.2227125404762</td><td>90.07354992142857</td><td>90.31323530119047</td><td>90.11512902857145</td><td>90.39748625714286</td><td>90.06087692023809</td><td>90.30466619880951</td><td>MRI</td><td>138.75</td><td>0.2396853797619087</td><td>0.2823572285714277</td><td>0.2437892785714268</td></tr>
+<tr><td>40</td><td>Task556_FeTA2022_all</td><td>T2 weighted MRI</td><td>0.0</td><td>1.0</td><td>0.0</td><td>96.0</td><td>85.28595901488094</td><td>85.09884132142858</td><td>85.40346221011905</td><td>85.02790801369048</td><td>85.1565782422619</td><td>84.92889643630953</td><td>85.07164985892857</td><td>MRI</td><td>120.0</td><td>0.3046208886904651</td><td>0.1286702285714227</td><td>0.1427534226190374</td></tr>
+<tr><td>41</td><td>Task559_WORD</td><td>CT</td><td>0.6875</td><td>1.0</td><td>0.0</td><td>96.0</td><td>83.0430853796875</td><td>84.75070117343749</td><td>85.04693239192709</td><td>84.54399519401042</td><td>86.01272151171874</td><td>84.48892677656251</td><td>86.06163075494793</td><td>CT</td><td>120.0</td><td>0.296231218489595</td><td>1.4687263177083167</td><td>1.5727039783854195</td></tr>
+<tr><td>42</td><td>Task603_MMWHS</td><td>CT</td><td>0.7142857142857143</td><td>1.0</td><td>0.0</td><td>32.0</td><td>90.03187064285714</td><td>89.68728980892857</td><td>89.5062987875</td><td>89.65546015</td><td>89.9858490142857</td><td>89.50515678571428</td><td>89.51891988214285</td><td>CT</td><td>40.0</td><td>-0.1809910214285679</td><td>0.3303888642857089</td><td>0.0137630964285762</td></tr>
+<tr><td>43</td><td>Task605_SegThor</td><td>CT</td><td>0.75</td><td>1.0</td><td>0.0</td><td>32.0</td><td>90.880316440625</td><td>90.64775478125</td><td>90.88766925625</td><td>90.977637221875</td><td>91.314106728125</td><td>90.9708356875</td><td>91.492038565625</td><td>CT</td><td>40.0</td><td>0.2399144750000061</td><td>0.3364695062499976</td><td>0.5212028781249956</td></tr>
+<tr><td>44</td><td>Task611_PROMISE12</td><td>MRI</td><td>0.0</td><td>1.0</td><td>0.0</td><td>40.0</td><td>90.06376682</td><td>90.34956425</td><td>90.6450544</td><td>86.15444023</td><td>91.00837324</td><td>90.07755491</td><td>90.98170783</td><td>MRI</td><td>50.0</td><td>0.2954901500000062</td><td>4.853933009999992</td><td>0.9041529200000014</td></tr>
+<tr><td>45</td><td>Task612_CTPelvic1k</td><td>CT</td><td>0.75</td><td>1.0</td><td>0.0</td><td>884.0</td><td>65.2428591384009</td><td>70.77903115990992</td><td>88.07957420472974</td><td>70.12807668862612</td><td>89.39216855867116</td><td>70.15207644977478</td><td>89.53724504819819</td><td>CT</td><td>1105.0</td><td>17.30054304481982</td><td>19.264091870045036</td><td>19.385168598423405</td></tr>
+<tr><td>46</td><td>Task613_COVID-19-20</td><td>CT</td><td>0.0</td><td>0.0</td><td>1.0</td><td>159.0</td><td>72.63239183499999</td><td>74.1761252725</td><td>74.25536067499999</td><td>73.816644285</td><td>73.610132605</td><td>73.68490599</td><td>73.39777197000001</td><td>CT</td><td>198.75</td><td>0.0792354024999895</td><td>-0.2065116799999913</td><td>-0.2871340199999963</td></tr>
+<tr><td>47</td><td>Task614_LUNA16</td><td>CT</td><td>0.0</td><td>1.0</td><td>0.0</td><td>710.0</td><td>98.70879114325842</td><td>98.72262888707864</td><td>98.75617498707864</td><td>98.75172500786516</td><td>98.8091026707865</td><td>98.65972095955055</td><td>98.7963963488764</td><td>CT</td><td>887.5</td><td>0.0335461000000094</td><td>0.0573776629213398</td><td>0.1366753893258305</td></tr>
+<tr><td>48</td><td>Task616_LNDb</td><td>CT</td><td>0.0</td><td>0.0</td><td>1.0</td><td>188.0</td><td>35.868065082978724</td><td>31.748479630434783</td><td>36.67020802765958</td><td>35.091500178260866</td><td>40.53043807777778</td><td>37.37896993695652</td><td>38.22000525217391</td><td>CT</td><td>235.0</td><td>4.921728397224793</td><td>5.438937899516915</td><td>0.8410353152173897</td></tr>
+<tr><td>49</td><td>Task628_StructSeg2019_subtask1</td><td>CT</td><td>0.0</td><td>1.0</td><td>0.0</td><td>40.0</td><td>74.99247475772728</td><td>76.58181757681818</td><td>73.31582512136363</td><td>78.66853209818183</td><td>79.3610332109091</td><td>72.39897188545454</td><td>70.96132550636364</td><td>CT</td><td>50.0</td><td>-3.265992455454551</td><td>0.6925011127272711</td><td>-1.437646379090907</td></tr>
+<tr><td>50</td><td>Task629_StructSeg2019_subtask2</td><td>CT</td><td>0.3333333333333333</td><td>1.0</td><td>0.0</td><td>40.0</td><td>90.499894545</td><td>90.151344615</td><td>90.60624450333331</td><td>90.12128602</td><td>90.739882985</td><td>90.44808636166668</td><td>90.73669653</td><td>CT</td><td>50.0</td><td>0.4548998883333297</td><td>0.6185969649999947</td><td>0.2886101683333351</td></tr>
+<tr><td>51</td><td>Task630_StructSeg2019_subtask3</td><td>CT</td><td>0.0</td><td>0.0</td><td>1.0</td><td>40.0</td><td>57.69578548</td><td>56.55239135000001</td><td>60.809517189999994</td><td>59.4223945</td><td>61.963535619999995</td><td>50.19477821</td><td>61.99768804</td><td>CT</td><td>50.0</td><td>4.257125839999986</td><td>2.541141119999999</td><td>11.802909830000004</td></tr>
+<tr><td>52</td><td>Task631_StructSeg2019_subtask4</td><td>CT</td><td>0.0</td><td>0.0</td><td>1.0</td><td>40.0</td><td>60.24406096</td><td>61.603779450000005</td><td>63.04245476</td><td>59.87712015999999</td><td>63.14252811</td><td>60.19258092</td><td>63.001975470000005</td><td>CT</td><td>50.0</td><td>1.4386753099999936</td><td>3.265407950000011</td><td>2.8093945500000075</td></tr>
+<tr><td>53</td><td>Task700_SEG_A_2023</td><td>CT</td><td>1.0</td><td>1.0</td><td>0.0</td><td>44.0</td><td>92.44890338333332</td><td>91.393043775</td><td>92.57544693333334</td><td>91.91915184166668</td><td>92.77267490833331</td><td>92.00652700833332</td><td>92.74060084166666</td><td>CT</td><td>55.0</td><td>1.1824031583333294</td><td>0.8535230666666536</td><td>0.7340738333333405</td></tr>
+<tr><td>54</td><td>Task701_LNQ2023</td><td>CT</td><td>0.0</td><td>0.0</td><td>1.0</td><td>314.0</td><td>41.435674391666666</td><td>49.98949635972222</td><td>50.89560694861112</td><td>48.10905808472222</td><td>49.82568584444445</td><td>47.61566611388889</td><td>51.02540870833334</td><td>CT</td><td>392.5</td><td>0.9061105888889004</td><td>1.716627759722229</td><td>3.4097425944444453</td></tr>
+<tr><td>55</td><td>Task702_CAS2023</td><td>TOF MRI</td><td>0.0</td><td>1.0</td><td>0.0</td><td>80.0</td><td>86.702257895</td><td>86.769041595</td><td>86.912501045</td><td>86.645196725</td><td>87.00331541</td><td>86.53646065000001</td><td>87.04057494999999</td><td>MRI</td><td>100.0</td><td>0.1434594499999946</td><td>0.3581186849999938</td><td>0.5041142999999835</td></tr>
+<tr><td>56</td><td>Task703_TDSC-ABUS2023</td><td>Ultrasound</td><td>0.0</td><td>0.0</td><td>1.0</td><td>80.0</td><td>49.659480805</td><td>53.699989325</td><td>54.536169925</td><td>50.1812471</td><td>52.647385105</td><td>49.375434185</td><td>52.775382775</td><td>Ultrasound</td><td>100.0</td><td>0.8361805999999987</td><td>2.4661380049999977</td><td>3.399948590000008</td></tr>
+<tr><td>57</td><td>Task720_HIE2023</td><td>ADC MRI, DWI MRI</td><td>0.0</td><td>0.0</td><td>1.0</td><td>68.0</td><td>46.129226923529416</td><td>49.37896495882353</td><td>46.01636788235294</td><td>43.99426805294118</td><td>45.515551511764706</td><td>47.26397155294118</td><td>43.49077853529412</td><td>MRI</td><td>85.0</td><td>-3.3625970764705926</td><td>1.5212834588235251</td><td>-3.77319301764706</td></tr>
+<tr><td>58</td><td>Task895_BraTS2023_SSA</td><td>T1 MRI, T1 weighted MRI, T2 weighted MRI, FLAIR MRI</td><td>0.0</td><td>0.0</td><td>1.0</td><td>34.0</td><td>79.79589424444445</td><td>79.22832837407407</td><td>80.90896817777778</td><td>78.40770961851851</td><td>83.67998885555555</td><td>78.07112772592592</td><td>80.98050882222222</td><td>MRI</td><td>42.5</td><td>1.680639803703713</td><td>5.27227923703704</td><td>2.9093810962963005</td></tr>
+<tr><td>59</td><td>Task899_BraTS2023_GLI</td><td>T1 MRI, T1 weighted MRI, T2 weighted MRI, FLAIR MRI</td><td>0.0</td><td>0.3333333333333333</td><td>0.6666666666666666</td><td>1000.0</td><td>85.08269938186666</td><td>84.95381648664888</td><td>85.04530265949198</td><td>85.14889650838882</td><td>85.50720678447122</td><td>85.31453003105756</td><td>85.55647099145527</td><td>MRI</td><td>1250.0</td><td>0.0914861728431049</td><td>0.3583102760824062</td><td>0.2419409603977129</td></tr>
+<tr><td>60</td><td>Task966-HaN_Seg</td><td>CT</td><td>0.0</td><td>1.0</td><td>0.0</td><td>33.0</td><td>62.00300213222223</td><td>61.09809689555556</td><td>64.20064192740742</td><td>62.55319743296296</td><td>66.03127775037038</td><td>66.84468278407407</td><td>63.95594338185186</td><td>CT</td><td>41.25</td><td>3.102545031851861</td><td>3.478080317407418</td><td>-2.888739402222207</td></tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        function filterTable() {
+            const filter = document.querySelector('#modalityFilter').value.toLowerCase();
+            const rows = document.querySelectorAll('tbody tr');
+
+            rows.forEach(row => {
+                const modalityCell = row.querySelector('td:nth-child(3)');
+                if (modalityCell) {
+                    const modalityText = modalityCell.textContent.toLowerCase();
+                    if (filter === '' || modalityText.includes(filter)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

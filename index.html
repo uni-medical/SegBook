@@ -3,10 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SegBook</title>
+    <title>SegBook - Medical Segmentation CookBook</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            position: relative;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+        header::before {
+            content: "";
+            background: url('./static/image/motivation.png') no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5; /* 调整透明度 */
+            z-index: -1;
+        }
+        .header-content {
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
+        .header-content div {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .header-content h1 {
+            font-size: 56px;
+            margin-bottom: 32px;
+        }
+        .header-content p {
+            font-size: 18.4px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #444;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav .logo {
+            margin-right: auto;
+            padding-left: 20px;
+        }
+        nav .logo i {
+            font-size: 24px;
+            color: white;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+            padding-top: 80px; /* Offset for fixed navbar */
+        }
+        .section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to SegBook</h1>
-    <p>This is a GitHub Pages site for the SegBook repository.</p>
+    <header>
+        <div class="header-content">
+            <div>
+                <h1>SegBook</h1>
+                <p>Medical Segmentation CookBook</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="datasets.html">Datasets</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="tools.html">Tools</a>
+    </nav>
+    <div class="container">
+        <div class="section">
+            <h2>Welcome to SegBook</h2>
+            <p>SegBook: An introduction to the latest medical segmentation models and datasets</p>
+            <a href="#" class="button">Read More</a>
+        </div>
+        <div class="section">
+            <h2>What is Medical Segmentation?</h2>
+            <p>Medical segmentation is a critical step in medical imaging analysis, which involves the precise location of anatomical structures and regions of interest in medical images. Accurate segmentation is essential for diagnosis, treatment planning, and monitoring of various diseases.</p>
+        </div>
+        <div class="section">
+            <h2>Our Services</h2>
+            <h3>Datasets</h3>
+            <p>Our datasets include a variety of medical imaging data for training and evaluating segmentation models.</p>
+            <h3>Analysis</h3>
+            <p>SegBook provides comprehensive analysis tools for evaluating the performance of medical segmentation models using various metrics.</p>
+            <h3>Tools</h3>
+            <p>We offer a range of tools and resources for developing and testing medical segmentation models.</p>
+        </div>
+        <div class="section">
+            <h2>SegBook Model</h2>
+            <p>We have developed a state-of-the-art model for medical image segmentation that leverages advanced deep learning techniques. The SegBook model is designed to accurately segment various anatomical structures and regions of interest in medical images.</p>
+            <a href="#" class="button">Try Now</a>
+            <a href="#" class="button">Read Code</a>
+        </div>
+    </div>
 </body>
 </html>
