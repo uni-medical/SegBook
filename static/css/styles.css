@@ -1,0 +1,355 @@
+/* static/css/styles.css */
+
+/* Color Variables */
+:root {
+    --primary-color: #6A82FB; /* Start color of the gradient */
+    --secondary-color: #FC5C7D; /* End color of the gradient */
+    --background-color: #f8f9fa;
+    --text-color: #212529;
+    --header-background: #ffffff;
+    --nav-background: #343a40;
+    --button-background: #6A82FB;
+    --button-hover: #FC5C7D;
+}
+
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    background-color: var(--header-background);
+    color: var(--text-color);
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--nav-background);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #6c757d;
+}
+
+.container {
+    padding: 20px;
+    padding-top: 80px; /* Offset for fixed navbar */
+}
+
+.section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 5px;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 10px 0;
+    color: white;
+    background-color: var(--button-background);
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1em;
+    width: auto;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-2px);
+}
+
+/* Header Styles for Home Page */
+header.homepage {
+    position: relative;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    /* Gradient background */
+    background: #FC5C7D;
+    background: -webkit-linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+header.homepage::before {
+    content: "";
+    /* Remove background image */
+    /* background: url('../image/main.webp') no-repeat center center; */
+    /* background-size: cover; */
+    /* Optional: If you want to overlay a semi-transparent image */
+    /* Uncomment and adjust the following lines if needed */
+    /*
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    */
+}
+
+/* Adjust header content to be above the gradient */
+.header-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.header-content h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.header-content p {
+    font-size: 1.5em;
+    max-width: 800px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.header-content .button {
+    margin: 0 auto;
+}
+
+.header-content .logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Our Services */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.service-item {
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.service-item i {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    margin-bottom: 20px;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Datasets Grid */
+.datasets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.dataset-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.dataset-box h3 {
+    margin-top: 0;
+}
+
+.dataset-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+.dataset-box a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.dataset-box a:hover {
+    text-decoration: underline;
+}
+
+/* Search Box */
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+/* Leaderboard */
+.leaderboard-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.leaderboard-menu button {
+    background-color: var(--button-background);
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.leaderboard-menu button:hover {
+    background-color: var(--button-hover);
+}
+
+.leaderboard-menu button.active {
+    background-color: var(--button-hover);
+}
+
+.table-container {
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f8f9fa;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Tools Page */
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tool-item {
+    background-color: white;
+    width: calc(50% - 40px);
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.tool-item h3 {
+    margin-top: 0;
+}
+
+.tool-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+.tool-item .button {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--nav-background);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Adjust container to account for fixed footer */
+.container {
+    padding-bottom: 80px; /* Height of the footer */
+}

@@ -1,73 +1,21 @@
+<!-- datasets.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datasets - SegBook</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        .container {
-            padding: 20px;
-            padding-top: 80px; /* Offset for fixed navbar */
-        }
-        .section {
-            background-color: white;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .section h2 {
-            margin-top: 0;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px 0;
-            color: white;
-            background-color: #007bff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>SegBook</h1>
-        <p>Medical Segmentation CookBook</p>
+        <!-- <h1>SegBook</h1>
+        <p>Medical Segmentation CookBook</p> -->
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -79,7 +27,46 @@
         <div class="section">
             <h2>Datasets</h2>
             <p>Our datasets include a variety of medical imaging data for training and evaluating segmentation models.</p>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search Datasets..." onkeyup="searchDatasets()">
+            </div>
+            <div class="datasets-grid" id="datasetsGrid">
+                <!-- Dataset Boxes -->
+                <div class="dataset-box">
+                    <h3>Task001_BrainTumour</h3>
+                    <p>Brain Tumour Segmentation Dataset</p>
+                    <a href="https://www.med.upenn.edu/sbia/brats2018/data.html" target="_blank">View Dataset</a>
+                </div>
+                <div class="dataset-box">
+                    <h3>Task002_Heart</h3>
+                    <p>Heart Segmentation Dataset</p>
+                    <a href="https://www.cardiacatlas.org/studies/acdc/" target="_blank">View Dataset</a>
+                </div>
+                <div class="dataset-box">
+                    <h3>Task003_Liver</h3>
+                    <p>Liver Segmentation Dataset</p>
+                    <a href="https://competitions.codalab.org/competitions/17094" target="_blank">View Dataset</a>
+                </div>
+                <!-- Add more dataset boxes as needed -->
+            </div>
         </div>
     </div>
+    <script>
+        function searchDatasets() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const datasetBoxes = document.querySelectorAll('.dataset-box');
+            datasetBoxes.forEach(box => {
+                const title = box.querySelector('h3').textContent.toLowerCase();
+                if (title.includes(input)) {
+                    box.style.display = '';
+                } else {
+                    box.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 SegBook. All rights reserved.</p>
+    </footer>
 </body>
 </html>
