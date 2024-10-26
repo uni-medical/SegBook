@@ -8,7 +8,7 @@ function loadLeaderboard(filename) {
     // Add 'active' class to the clicked button
     event.target.classList.add('active');
 
-    fetch(`static/data/${filename}`)
+    fetch(`static/data/json_segbook/${filename}`)
         .then(response => response.json())
         .then(data => {
             currentData = data;

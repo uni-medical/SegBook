@@ -1,0 +1,2191 @@
+{
+    "Disease": {
+        "Edema--\u6c34\u80bf": {
+            "nnunet": 0.7968,
+            "base": 0.7899,
+            "large": 0.7921,
+            "huge": 0.7966,
+            "base_ft": 0.7927,
+            "large_ft": 0.7968,
+            "huge_ft": 0.798
+        },
+        "Non-enhancing tumor--\u975e\u5f3a\u5316\u80bf\u7624": {
+            "nnunet": 0.6504,
+            "base": 0.643,
+            "large": 0.6506,
+            "huge": 0.65,
+            "base_ft": 0.6523,
+            "large_ft": 0.6558,
+            "huge_ft": 0.6653
+        },
+        "Enhancing tumor--\u5f3a\u5316\u80bf\u7624": {
+            "nnunet": 0.8375,
+            "base": 0.8397,
+            "large": 0.8416,
+            "huge": 0.8447,
+            "base_ft": 0.846,
+            "large_ft": 0.8522,
+            "huge_ft": 0.8528
+        },
+        "Liver tumor--\u809d\u80bf\u7624": {
+            "nnunet": 0.712,
+            "base": 0.7124,
+            "large": 0.7212,
+            "huge": 0.7262,
+            "base_ft": 0.7226,
+            "large_ft": 0.7305,
+            "huge_ft": 0.7341
+        },
+        "Lung cancer--\u80ba\u764c": {
+            "nnunet": 0.7132,
+            "base": 0.7003,
+            "large": 0.625,
+            "huge": 0.6197,
+            "base_ft": 0.7343,
+            "large_ft": 0.704,
+            "huge_ft": 0.7259
+        },
+        "Pancreatic tumor mass--\u80f0\u817a\u80bf\u7624\u5757": {
+            "nnunet": 0.4724,
+            "base": 0.4973,
+            "large": 0.5097,
+            "huge": 0.503,
+            "base_ft": 0.5361,
+            "large_ft": 0.5235,
+            "huge_ft": 0.5439
+        },
+        "Colon cancer primaries--\u7ed3\u80a0\u764c\u539f\u53d1\u7076": {
+            "nnunet": 0.4688,
+            "base": 0.4433,
+            "large": 0.4634,
+            "huge": 0.4136,
+            "base_ft": 0.4837,
+            "large_ft": 0.5163,
+            "huge_ft": 0.4999
+        },
+        "Kidney tumor--\u80be\u80bf\u7624": {
+            "nnunet": 0.821,
+            "base": 0.8243,
+            "large": 0.8251,
+            "huge": 0.8348,
+            "base_ft": 0.8196,
+            "large_ft": 0.8339,
+            "huge_ft": 0.8394
+        },
+        "Kidney cyst--\u80be\u56ca\u80bf": {
+            "nnunet": 0.4881,
+            "base": 0.4643,
+            "large": 0.4754,
+            "huge": 0.4906,
+            "base_ft": 0.5369,
+            "large_ft": 0.5677,
+            "huge_ft": 0.5875
+        },
+        "Intra vestibular schwannoma--\u5185\u4f4d\u524d\u5ead\u795e\u7ecf\u7624": {
+            "nnunet": 0.7931,
+            "base": 0.8047,
+            "large": 0.8074,
+            "huge": 0.7844,
+            "base_ft": 0.8088,
+            "large_ft": 0.806,
+            "huge_ft": 0.8055
+        },
+        "Extra vestibular schwannoma--\u989d\u5916\u4f4d\u524d\u5ead\u795e\u7ecf\u7624": {
+            "nnunet": 0.8172,
+            "base": 0.8069,
+            "large": 0.8088,
+            "huge": 0.8162,
+            "base_ft": 0.8168,
+            "large_ft": 0.8128,
+            "huge_ft": 0.8191
+        },
+        "Brain aneurysm--\u52a8\u8109\u7624": {
+            "nnunet": 0.4723,
+            "base": 0.3857,
+            "large": 0.489,
+            "huge": 0.4167,
+            "base_ft": 0.4968,
+            "large_ft": 0.5714,
+            "huge_ft": 0.5346
+        },
+        "Breast tumor--\u4e73\u817a\u80bf\u7624": {
+            "nnunet": 0.2779,
+            "base": 0.2679,
+            "large": 0.2846,
+            "huge": 0.2813,
+            "base_ft": 0.2787,
+            "large_ft": 0.2901,
+            "huge_ft": 0.2836
+        },
+        "Lung adenocarcinoma--\u80ba\u817a\u764c": {
+            "nnunet": 0.6899,
+            "base": 0.5832,
+            "large": 0.6717,
+            "huge": 0.6512,
+            "base_ft": 0.7236,
+            "large_ft": 0.74,
+            "huge_ft": 0.7389
+        },
+        "Lung tumor--\u80ba\u80bf\u7624": {
+            "nnunet": 0.6217,
+            "base": 0.6719,
+            "large": 0.6422,
+            "huge": 0.6237,
+            "base_ft": 0.8029,
+            "large_ft": 0.7814,
+            "huge_ft": 0.7767
+        },
+        "Lesion--\u75c5\u7076": {
+            "nnunet": 0.5914,
+            "base": 0.625,
+            "large": 0.6323,
+            "huge": 0.629,
+            "base_ft": 0.6645,
+            "large_ft": 0.6835,
+            "huge_ft": 0.6868
+        },
+        "Brain lesion--\u8111\u75c5\u7076": {
+            "nnunet": 0.6507,
+            "base": 0.6505,
+            "large": 0.654,
+            "huge": 0.6684,
+            "base_ft": 0.6535,
+            "large_ft": 0.6612,
+            "huge_ft": 0.6706
+        },
+        "Left ventricular myocardial edema--\u5de6\u5fc3\u5ba4\u5fc3\u808c\u6c34\u80bf": {
+            "nnunet": 0.3121,
+            "base": 0.3157,
+            "large": 0.3442,
+            "huge": 0.3296,
+            "base_ft": 0.3178,
+            "large_ft": 0.3414,
+            "huge_ft": 0.3602
+        },
+        "COVID-19 lesion--COVID-19\u75c5\u53d8": {
+            "nnunet": 0.6924,
+            "base": 0.7128,
+            "large": 0.7113,
+            "huge": 0.7032,
+            "base_ft": 0.7135,
+            "large_ft": 0.7154,
+            "huge_ft": 0.7122
+        },
+        "Lung nodule--\u80ba\u7ed3\u8282\n   ": {
+            "nnunet": 0.3587,
+            "base": 0.3175,
+            "large": 0.3509,
+            "huge": 0.3738,
+            "base_ft": 0.3667,
+            "large_ft": 0.4053,
+            "huge_ft": 0.3822
+        },
+        "Lung cancer--\u80ba\u764c\n   ": {
+            "nnunet": 0.577,
+            "base": 0.5655,
+            "large": 0.5942,
+            "huge": 0.5019,
+            "base_ft": 0.6081,
+            "large_ft": 0.6196,
+            "huge_ft": 0.62
+        },
+        "Nasopharyngeal cancer--\u9f3b\u54bd\u764c": {
+            "nnunet": 0.6024,
+            "base": 0.616,
+            "large": 0.5988,
+            "huge": 0.6019,
+            "base_ft": 0.6304,
+            "large_ft": 0.6314,
+            "huge_ft": 0.63
+        },
+        "Pulmonary nodule--\u80ba\u7ed3\u8282": {
+            "nnunet": 0.4144,
+            "base": 0.4999,
+            "large": 0.4811,
+            "huge": 0.4762,
+            "base_ft": 0.509,
+            "large_ft": 0.4983,
+            "huge_ft": 0.5103
+        },
+        "GTV nasopharynx--\u9f3b\u54bd\u90e8\u7684\u603b\u4f53\u9776\u533a\u4f53\u79ef": {
+            "nnunet": 0.7734,
+            "base": 0.7668,
+            "large": 0.7761,
+            "huge": 0.7715,
+            "base_ft": 0.7755,
+            "large_ft": 0.7824,
+            "huge_ft": 0.781
+        },
+        "GTV lymph node--\u6dcb\u5df4\u7ed3\u7684\u603b\u4f53\u9776\u533a\u4f53\u79ef": {
+            "nnunet": 0.7169,
+            "base": 0.713,
+            "large": 0.7252,
+            "huge": 0.7098,
+            "base_ft": 0.7181,
+            "large_ft": 0.7316,
+            "huge_ft": 0.7276
+        },
+        "Hypoxic ischemic encephalopathy--\u7f3a\u6c27\u7f3a\u8840\u6027\u8111\u75c5": {
+            "nnunet": 0.4613,
+            "base": 0.4938,
+            "large": 0.4399,
+            "huge": 0.4726,
+            "base_ft": 0.4602,
+            "large_ft": 0.4552,
+            "huge_ft": 0.4349
+        }
+    },
+    "\u80f8\u90e8\u7ed3\u6784": {
+        "Left atrium--\u5de6\u5fc3\u623f": {
+            "nnunet": 0.9234,
+            "base": 0.9228,
+            "large": 0.9224,
+            "huge": 0.9233,
+            "base_ft": 0.9235,
+            "large_ft": 0.9238,
+            "huge_ft": 0.9237
+        },
+        "Vertebrae T9--\u80f8\u690eT9": {
+            "nnunet": 0.8984,
+            "base": 0.884,
+            "large": 0.8919,
+            "huge": 0.8894,
+            "base_ft": 0.9,
+            "large_ft": 0.9036,
+            "huge_ft": 0.9023
+        },
+        "Esophagus--\u98df\u7ba1": {
+            "nnunet": 0.8553,
+            "base": 0.8502,
+            "large": 0.8612,
+            "huge": 0.8589,
+            "base_ft": 0.854,
+            "large_ft": 0.8625,
+            "huge_ft": 0.8647
+        },
+        "Aorta--\u4e3b\u52a8\u8109": {
+            "nnunet": 0.9056,
+            "base": 0.9024,
+            "large": 0.9126,
+            "huge": 0.9076,
+            "base_ft": 0.91,
+            "large_ft": 0.9176,
+            "huge_ft": 0.9173
+        },
+        "Right ventricle--\u53f3\u5fc3\u5ba4": {
+            "nnunet": 0.9131,
+            "base": 0.9086,
+            "large": 0.9182,
+            "huge": 0.9171,
+            "base_ft": 0.9182,
+            "large_ft": 0.9211,
+            "huge_ft": 0.9201
+        },
+        "Myocardium--\u5fc3\u808c": {
+            "nnunet": 0.8922,
+            "base": 0.8902,
+            "large": 0.8917,
+            "huge": 0.8903,
+            "base_ft": 0.8898,
+            "large_ft": 0.892,
+            "huge_ft": 0.8922
+        },
+        "Left ventricular myocardium--\u5de6\u5fc3\u5ba4\u5fc3\u808c": {
+            "nnunet": 0.9282,
+            "base": 0.9281,
+            "large": 0.9289,
+            "huge": 0.9283,
+            "base_ft": 0.9292,
+            "large_ft": 0.9307,
+            "huge_ft": 0.9298
+        },
+        "Pulmonary artery--\u80ba\u52a8\u8109": {
+            "nnunet": 0.8629,
+            "base": 0.8625,
+            "large": 0.863,
+            "huge": 0.8647,
+            "base_ft": 0.8594,
+            "large_ft": 0.8634,
+            "huge_ft": 0.8628
+        },
+        "Left atrial scar--\u5de6\u5fc3\u623f\u75a4\u75d5": {
+            "nnunet": 0.494,
+            "base": 0.5065,
+            "large": 0.487,
+            "huge": 0.4894,
+            "base_ft": 0.5208,
+            "large_ft": 0.4973,
+            "huge_ft": 0.4926
+        },
+        "Vertebrae T2--\u80f8\u690eT2": {
+            "nnunet": 0.754,
+            "base": 0.7526,
+            "large": 0.7668,
+            "huge": 0.7756,
+            "base_ft": 0.7731,
+            "large_ft": 0.7853,
+            "huge_ft": 0.7916
+        },
+        "Vertebrae T3--\u80f8\u690eT3": {
+            "nnunet": 0.7655,
+            "base": 0.7887,
+            "large": 0.822,
+            "huge": 0.8101,
+            "base_ft": 0.8215,
+            "large_ft": 0.8226,
+            "huge_ft": 0.8296
+        },
+        "Vertebrae T4--\u80f8\u690eT4": {
+            "nnunet": 0.7133,
+            "base": 0.7477,
+            "large": 0.739,
+            "huge": 0.7277,
+            "base_ft": 0.7493,
+            "large_ft": 0.7947,
+            "huge_ft": 0.8112
+        },
+        "Vertebrae T5--\u80f8\u690eT5": {
+            "nnunet": 0.6617,
+            "base": 0.6499,
+            "large": 0.6404,
+            "huge": 0.6758,
+            "base_ft": 0.6794,
+            "large_ft": 0.7304,
+            "huge_ft": 0.7203
+        },
+        "Vertebrae T6--\u80f8\u690eT6": {
+            "nnunet": 0.6003,
+            "base": 0.5946,
+            "large": 0.5995,
+            "huge": 0.6108,
+            "base_ft": 0.6146,
+            "large_ft": 0.6235,
+            "huge_ft": 0.6209
+        },
+        "Vertebrae T7--\u80f8\u690eT7": {
+            "nnunet": 0.586,
+            "base": 0.5857,
+            "large": 0.5852,
+            "huge": 0.5863,
+            "base_ft": 0.5857,
+            "large_ft": 0.5928,
+            "huge_ft": 0.5963
+        },
+        "Vertebrae T8--\u80f8\u690eT8": {
+            "nnunet": 0.6037,
+            "base": 0.6057,
+            "large": 0.6139,
+            "huge": 0.6112,
+            "base_ft": 0.6037,
+            "large_ft": 0.6095,
+            "huge_ft": 0.6088
+        },
+        "Vertebrae T10--\u80f8\u690eT10": {
+            "nnunet": 0.6227,
+            "base": 0.6191,
+            "large": 0.6242,
+            "huge": 0.6197,
+            "base_ft": 0.619,
+            "large_ft": 0.6182,
+            "huge_ft": 0.6211
+        },
+        "Vertebrae T11--\u80f8\u690eT11": {
+            "nnunet": 0.6009,
+            "base": 0.6,
+            "large": 0.6055,
+            "huge": 0.5985,
+            "base_ft": 0.6064,
+            "large_ft": 0.6042,
+            "huge_ft": 0.6089
+        },
+        "Vertebrae T12--\u80f8\u690eT12": {
+            "nnunet": 0.5959,
+            "base": 0.6021,
+            "large": 0.6034,
+            "huge": 0.5959,
+            "base_ft": 0.6011,
+            "large_ft": 0.6059,
+            "huge_ft": 0.6083
+        },
+        "Vertebrae T1--\u80f8\u690eT1": {
+            "nnunet": 0.7639,
+            "base": 0.8318,
+            "large": 0.8394,
+            "huge": 0.8362,
+            "base_ft": 0.834,
+            "large_ft": 0.8238,
+            "huge_ft": 0.8231
+        },
+        "Vertebrae T13--\u80f8\u690eT13": {
+            "nnunet": 0.8177,
+            "base": 0.8592,
+            "large": 0.8668,
+            "huge": 0.8532,
+            "base_ft": 0.8643,
+            "large_ft": 0.8663,
+            "huge_ft": 0.8692
+        },
+        "Breast tissue--\u4e73\u817a\u7ec4\u7ec7": {
+            "nnunet": 0.4926,
+            "base": 0.521,
+            "large": 0.5258,
+            "huge": 0.5372,
+            "base_ft": 0.5323,
+            "large_ft": 0.5456,
+            "huge_ft": 0.5407
+        },
+        "Left ventricle--\u5de6\u5fc3\u5ba4": {
+            "nnunet": 0.9252,
+            "base": 0.9233,
+            "large": 0.9217,
+            "huge": 0.9225,
+            "base_ft": 0.928,
+            "large_ft": 0.9237,
+            "huge_ft": 0.9249
+        },
+        "Right ventricle--\u53f3\u5fc3\u5ba4\u8840\u6c60": {
+            "nnunet": 0.9218,
+            "base": 0.876,
+            "large": 0.8596,
+            "huge": 0.8562,
+            "base_ft": 0.885,
+            "large_ft": 0.8817,
+            "huge_ft": 0.8703
+        },
+        "Left ventricular myocardial scars--\u5de6\u5fc3\u5ba4\u5fc3\u808c\u75a4\u75d5": {
+            "nnunet": 0.6575,
+            "base": 0.6357,
+            "large": 0.6337,
+            "huge": 0.6164,
+            "base_ft": 0.6519,
+            "large_ft": 0.6721,
+            "huge_ft": 0.6595
+        },
+        "Right atrium--\u53f3\u5fc3\u623f": {
+            "nnunet": 0.9125,
+            "base": 0.9055,
+            "large": 0.894,
+            "huge": 0.8975,
+            "base_ft": 0.8859,
+            "large_ft": 0.9024,
+            "huge_ft": 0.8837
+        },
+        "Ascending aorta--\u5347\u4e3b\u52a8\u8109": {
+            "nnunet": 0.898,
+            "base": 0.8891,
+            "large": 0.8957,
+            "huge": 0.8794,
+            "base_ft": 0.8973,
+            "large_ft": 0.9146,
+            "huge_ft": 0.9003
+        },
+        "Heart--\u5fc3\u810f": {
+            "nnunet": 0.8967,
+            "base": 0.888,
+            "large": 0.8914,
+            "huge": 0.8952,
+            "base_ft": 0.8931,
+            "large_ft": 0.8941,
+            "huge_ft": 0.8973
+        },
+        "Left anterior descending artery--\u5de6\u524d\u964d\u652f\u52a8\u8109": {
+            "nnunet": 0.1409,
+            "base": 0.0723,
+            "large": 0.1081,
+            "huge": 0.143,
+            "base_ft": 0.0792,
+            "large_ft": 0.1858,
+            "huge_ft": 0.1758
+        },
+        "Left circumflex artery--\u5de6\u56de\u65cb\u652f\u52a8\u8109": {
+            "nnunet": 0.0,
+            "base": 0.0,
+            "large": 0.0,
+            "huge": 0.0,
+            "base_ft": 0.0,
+            "large_ft": 0.1545,
+            "huge_ft": 0.0
+        },
+        "Right coronary artery--\u53f3\u51a0\u72b6\u52a8\u8109": {
+            "nnunet": 0.0,
+            "base": 0.0,
+            "large": 0.0,
+            "huge": 0.0,
+            "base_ft": 0.6935,
+            "large_ft": 0.7937,
+            "huge_ft": 0.8971
+        },
+        "Lung--\u80ba\n   ": {
+            "nnunet": 0.9871,
+            "base": 0.9872,
+            "large": 0.9875,
+            "huge": 0.9866,
+            "base_ft": 0.9876,
+            "large_ft": 0.9881,
+            "huge_ft": 0.988
+        },
+        "Left lung--\u5de6\u80ba": {
+            "nnunet": 0.962,
+            "base": 0.9605,
+            "large": 0.9616,
+            "huge": 0.9613,
+            "base_ft": 0.9618,
+            "large_ft": 0.9618,
+            "huge_ft": 0.9625
+        },
+        "Right lung--\u53f3\u80ba": {
+            "nnunet": 0.967,
+            "base": 0.9672,
+            "large": 0.9668,
+            "huge": 0.9682,
+            "base_ft": 0.9665,
+            "large_ft": 0.9676,
+            "huge_ft": 0.9668
+        }
+    },
+    "\u8179\u90e8\u7ed3\u6784": {
+        "Liver--\u809d": {
+            "nnunet": 0.967,
+            "base": 0.967,
+            "large": 0.968,
+            "huge": 0.9681,
+            "base_ft": 0.9674,
+            "large_ft": 0.969,
+            "huge_ft": 0.9692
+        },
+        "Pancreas--\u80f0\u817a": {
+            "nnunet": 0.8721,
+            "base": 0.8754,
+            "large": 0.8788,
+            "huge": 0.8793,
+            "base_ft": 0.8754,
+            "large_ft": 0.8813,
+            "huge_ft": 0.8822
+        },
+        "Hepatic vessels--\u809d\u8840\u7ba1": {
+            "nnunet": 0.6746,
+            "base": 0.6798,
+            "large": 0.6781,
+            "huge": 0.6859,
+            "base_ft": 0.6752,
+            "large_ft": 0.68,
+            "huge_ft": 0.6778
+        },
+        "Spleen--\u813e\u810f": {
+            "nnunet": 0.9695,
+            "base": 0.9702,
+            "large": 0.9717,
+            "huge": 0.9701,
+            "base_ft": 0.9695,
+            "large_ft": 0.9734,
+            "huge_ft": 0.974
+        },
+        "Right adrenal gland--\u53f3\u80be\u4e0a\u817a": {
+            "nnunet": 0.7939,
+            "base": 0.7917,
+            "large": 0.801,
+            "huge": 0.7975,
+            "base_ft": 0.7964,
+            "large_ft": 0.8006,
+            "huge_ft": 0.8036
+        },
+        "Left adrenal gland--\u5de6\u80be\u4e0a\u817a": {
+            "nnunet": 0.804,
+            "base": 0.8066,
+            "large": 0.811,
+            "huge": 0.8103,
+            "base_ft": 0.804,
+            "large_ft": 0.8146,
+            "huge_ft": 0.8185
+        },
+        "Right kidney--\u53f3\u80be": {
+            "nnunet": 0.9495,
+            "base": 0.955,
+            "large": 0.9543,
+            "huge": 0.951,
+            "base_ft": 0.9523,
+            "large_ft": 0.958,
+            "huge_ft": 0.9609
+        },
+        "Left kidney--\u5de6\u80be": {
+            "nnunet": 0.9582,
+            "base": 0.958,
+            "large": 0.9579,
+            "huge": 0.9581,
+            "base_ft": 0.96,
+            "large_ft": 0.9602,
+            "huge_ft": 0.9606
+        },
+        "Gallbladder--\u80c6\u56ca": {
+            "nnunet": 0.8182,
+            "base": 0.8174,
+            "large": 0.8291,
+            "huge": 0.8261,
+            "base_ft": 0.8228,
+            "large_ft": 0.8439,
+            "huge_ft": 0.8437
+        },
+        "Stomach--\u80c3": {
+            "nnunet": 0.9214,
+            "base": 0.9219,
+            "large": 0.9302,
+            "huge": 0.9315,
+            "base_ft": 0.9266,
+            "large_ft": 0.9353,
+            "huge_ft": 0.9384
+        },
+        "Inferior vena cava--\u4e0b\u8154\u9759\u8109": {
+            "nnunet": 0.8802,
+            "base": 0.8873,
+            "large": 0.8822,
+            "huge": 0.884,
+            "base_ft": 0.8872,
+            "large_ft": 0.9047,
+            "huge_ft": 0.894
+        },
+        "Small intestine--\u5c0f\u80a0": {
+            "nnunet": 0.5231,
+            "base": 0.5091,
+            "large": 0.4893,
+            "huge": 0.5134,
+            "base_ft": 0.5572,
+            "large_ft": 0.5258,
+            "huge_ft": 0.535
+        },
+        "Kidney--\u80be": {
+            "nnunet": 0.9669,
+            "base": 0.9661,
+            "large": 0.9674,
+            "huge": 0.967,
+            "base_ft": 0.9681,
+            "large_ft": 0.9685,
+            "huge_ft": 0.9682
+        },
+        "Duodenum--\u5341\u4e8c\u6307\u80a0": {
+            "nnunet": 0.8167,
+            "base": 0.82,
+            "large": 0.8253,
+            "huge": 0.8227,
+            "base_ft": 0.8178,
+            "large_ft": 0.8296,
+            "huge_ft": 0.8281
+        },
+        "Renal artery--\u80be\u52a8\u8109": {
+            "nnunet": 0.87,
+            "base": 0.8694,
+            "large": 0.8685,
+            "huge": 0.8684,
+            "base_ft": 0.8763,
+            "large_ft": 0.8748,
+            "huge_ft": 0.883
+        },
+        "Portal vein--\u95e8\u9759\u8109": {
+            "nnunet": 0.2769,
+            "base": 0.2777,
+            "large": 0.2634,
+            "huge": 0.2637,
+            "base_ft": 0.292,
+            "large_ft": 0.2836,
+            "huge_ft": 0.283
+        },
+        "Colon--\u7ed3\u80a0": {
+            "nnunet": 0.8293,
+            "base": 0.8311,
+            "large": 0.8312,
+            "huge": 0.8241,
+            "base_ft": 0.8315,
+            "large_ft": 0.8309,
+            "huge_ft": 0.8397
+        },
+        "Intestine--\u80a0": {
+            "nnunet": 0.8689,
+            "base": 0.8705,
+            "large": 0.8704,
+            "huge": 0.8703,
+            "base_ft": 0.8676,
+            "large_ft": 0.8725,
+            "huge_ft": 0.8751
+        },
+        "Adrenal gland--\u80be\u4e0a\u817a": {
+            "nnunet": 0.7319,
+            "base": 0.7244,
+            "large": 0.7145,
+            "huge": 0.7211,
+            "base_ft": 0.7251,
+            "large_ft": 0.7346,
+            "huge_ft": 0.7362
+        }
+    },
+    "\u5934\u9888\u7ed3\u6784": {
+        "Anterior hippocampus--\u6d77\u9a6c\u524d\u90e8": {
+            "nnunet": 0.9009,
+            "base": 0.8978,
+            "large": 0.8999,
+            "huge": 0.9013,
+            "base_ft": 0.8977,
+            "large_ft": 0.9,
+            "huge_ft": 0.8998
+        },
+        "Intracranial hemorrhage--\u9885\u5185\u51fa\u8840": {
+            "nnunet": 0.6749,
+            "base": 0.6861,
+            "large": 0.6953,
+            "huge": 0.6955,
+            "base_ft": 0.6755,
+            "large_ft": 0.6996,
+            "huge_ft": 0.7027
+        },
+        "Airway--\u6c14\u9053": {
+            "nnunet": 0.9178,
+            "base": 0.9178,
+            "large": 0.918,
+            "huge": 0.9186,
+            "base_ft": 0.9208,
+            "large_ft": 0.9235,
+            "huge_ft": 0.9236
+        },
+        "Ischemic stroke--\u7f3a\u8840\u6027\u4e2d\u98ce": {
+            "nnunet": 0.7836,
+            "base": 0.7802,
+            "large": 0.7919,
+            "huge": 0.7929,
+            "base_ft": 0.7866,
+            "large_ft": 0.7878,
+            "huge_ft": 0.7898
+        },
+        "Cochlea--\u8033\u8717": {
+            "nnunet": 0.7777,
+            "base": 0.7686,
+            "large": 0.7674,
+            "huge": 0.7738,
+            "base_ft": 0.7642,
+            "large_ft": 0.7677,
+            "huge_ft": 0.7715
+        },
+        "Treated aneurysm--\u6108\u540e\u52a8\u8109\u7624": {
+            "nnunet": 0.5406,
+            "base": 0.7342,
+            "large": 0.7346,
+            "huge": 0.7687,
+            "base_ft": 0.808,
+            "large_ft": 0.8052,
+            "huge_ft": 0.8057
+        },
+        "Cerebral artery--\u8111\u52a8\u8109": {
+            "nnunet": 0.8618,
+            "base": 0.8636,
+            "large": 0.8621,
+            "huge": 0.86,
+            "base_ft": 0.8651,
+            "large_ft": 0.8657,
+            "huge_ft": 0.865
+        },
+        "White matter hyperintensity--\u767d\u8d28\u9ad8\u4fe1\u53f7": {
+            "nnunet": 0.8267,
+            "base": 0.8179,
+            "large": 0.8128,
+            "huge": 0.8118,
+            "base_ft": 0.8167,
+            "large_ft": 0.8142,
+            "huge_ft": 0.8188
+        },
+        "External cerebrospinal fluid--\u5916\u8111\u810a\u6db2": {
+            "nnunet": 0.8299,
+            "base": 0.828,
+            "large": 0.827,
+            "huge": 0.8261,
+            "base_ft": 0.8304,
+            "large_ft": 0.8284,
+            "huge_ft": 0.8258
+        },
+        "Gray matter--\u7070\u8d28": {
+            "nnunet": 0.7668,
+            "base": 0.7623,
+            "large": 0.763,
+            "huge": 0.762,
+            "base_ft": 0.7647,
+            "large_ft": 0.7653,
+            "huge_ft": 0.7627
+        },
+        "White matter--\u767d\u8d28": {
+            "nnunet": 0.916,
+            "base": 0.9148,
+            "large": 0.9149,
+            "huge": 0.9151,
+            "base_ft": 0.9149,
+            "large_ft": 0.9151,
+            "huge_ft": 0.9146
+        },
+        "Cerebral ventricle--\u8111\u5ba4": {
+            "nnunet": 0.8842,
+            "base": 0.8846,
+            "large": 0.8837,
+            "huge": 0.8841,
+            "base_ft": 0.8827,
+            "large_ft": 0.8845,
+            "huge_ft": 0.8846
+        },
+        "Cerebellum--\u5c0f\u8111": {
+            "nnunet": 0.862,
+            "base": 0.8562,
+            "large": 0.8527,
+            "huge": 0.854,
+            "base_ft": 0.8719,
+            "large_ft": 0.8566,
+            "huge_ft": 0.8525
+        },
+        "Deep gray matter--\u6df1\u90e8\u7070\u8d28": {
+            "nnunet": 0.8757,
+            "base": 0.8705,
+            "large": 0.8697,
+            "huge": 0.8702,
+            "base_ft": 0.873,
+            "large_ft": 0.8691,
+            "huge_ft": 0.8727
+        },
+        "Bain stem--\u8111\u5e72": {
+            "nnunet": 0.8802,
+            "base": 0.8766,
+            "large": 0.8823,
+            "huge": 0.8795,
+            "base_ft": 0.8765,
+            "large_ft": 0.8838,
+            "huge_ft": 0.8668
+        },
+        "Trachea--\u6c14\u7ba1": {
+            "nnunet": 0.9305,
+            "base": 0.9245,
+            "large": 0.9282,
+            "huge": 0.9241,
+            "base_ft": 0.9288,
+            "large_ft": 0.9304,
+            "huge_ft": 0.9333
+        },
+        "Left eye--\u5de6\u773c": {
+            "nnunet": 0.9219,
+            "base": 0.9136,
+            "large": 0.9121,
+            "huge": 0.9209,
+            "base_ft": 0.9194,
+            "large_ft": 0.9227,
+            "huge_ft": 0.9214
+        },
+        "Left temporal lobe--\u5de6\u989e\u53f6": {
+            "nnunet": 0.8594,
+            "base": 0.8641,
+            "large": 0.8576,
+            "huge": 0.8451,
+            "base_ft": 0.8559,
+            "large_ft": 0.8625,
+            "huge_ft": 0.7768
+        },
+        "Right temporal lobe--\u53f3\u989e\u53f6": {
+            "nnunet": 0.8897,
+            "base": 0.8798,
+            "large": 0.8864,
+            "huge": 0.8818,
+            "base_ft": 0.8979,
+            "large_ft": 0.8927,
+            "huge_ft": 0.8872
+        },
+        "Spinal cord--\u810a\u9ad3": {
+            "nnunet": 0.8639,
+            "base": 0.8814,
+            "large": 0.8825,
+            "huge": 0.8729,
+            "base_ft": 0.852,
+            "large_ft": 0.8882,
+            "huge_ft": 0.8691
+        },
+        "Left parotid gland--\u5de6\u816e\u817a": {
+            "nnunet": 0.6824,
+            "base": 0.6127,
+            "large": 0.7206,
+            "huge": 0.6659,
+            "base_ft": 0.6857,
+            "large_ft": 0.7384,
+            "huge_ft": 0.719
+        },
+        "Right parotid gland--\u53f3\u816e\u817a": {
+            "nnunet": 0.7161,
+            "base": 0.6707,
+            "large": 0.7171,
+            "huge": 0.7063,
+            "base_ft": 0.7474,
+            "large_ft": 0.7117,
+            "huge_ft": 0.7508
+        },
+        "Left inner ear--\u5de6\u5185\u8033": {
+            "nnunet": 0.7435,
+            "base": 0.8324,
+            "large": 0.8254,
+            "huge": 0.7519,
+            "base_ft": 0.7767,
+            "large_ft": 0.8368,
+            "huge_ft": 0.742
+        },
+        "Right inner ear--\u53f3\u5185\u8033": {
+            "nnunet": 0.6965,
+            "base": 0.7746,
+            "large": 0.7269,
+            "huge": 0.721,
+            "base_ft": 0.7323,
+            "large_ft": 0.8167,
+            "huge_ft": 0.7262
+        },
+        "Left middle ear--\u5de6\u4e2d\u8033": {
+            "nnunet": 0.7504,
+            "base": 0.7657,
+            "large": 0.7812,
+            "huge": 0.7336,
+            "base_ft": 0.7946,
+            "large_ft": 0.8107,
+            "huge_ft": 0.787
+        },
+        "Right middle ear--\u53f3\u4e2d\u8033": {
+            "nnunet": 0.7417,
+            "base": 0.7724,
+            "large": 0.7724,
+            "huge": 0.7438,
+            "base_ft": 0.7522,
+            "large_ft": 0.8114,
+            "huge_ft": 0.7794
+        },
+        "Left temporomandibular joint--\u5de6\u989e\u4e0b\u988c\u5173\u8282": {
+            "nnunet": 0.7491,
+            "base": 0.74,
+            "large": 0.7794,
+            "huge": 0.7094,
+            "base_ft": 0.7925,
+            "large_ft": 0.8099,
+            "huge_ft": 0.7927
+        },
+        "Right eye--\u53f3\u773c": {
+            "nnunet": 0.9128,
+            "base": 0.8976,
+            "large": 0.9265,
+            "huge": 0.8938,
+            "base_ft": 0.9046,
+            "large_ft": 0.9256,
+            "huge_ft": 0.9007
+        },
+        "Right temporomandibular joint--\u53f3\u989e\u4e0b\u988c\u5173\u8282": {
+            "nnunet": 0.8025,
+            "base": 0.7538,
+            "large": 0.7988,
+            "huge": 0.7709,
+            "base_ft": 0.8618,
+            "large_ft": 0.8291,
+            "huge_ft": 0.8222
+        },
+        "Left mandible--\u5de6\u4e0b\u988c\u9aa8": {
+            "nnunet": 0.8133,
+            "base": 0.6979,
+            "large": 0.8788,
+            "huge": 0.8336,
+            "base_ft": 0.7966,
+            "large_ft": 0.8755,
+            "huge_ft": 0.8436
+        },
+        "Right mandible--\u53f3\u4e0b\u988c\u9aa8": {
+            "nnunet": 0.8366,
+            "base": 0.7677,
+            "large": 0.884,
+            "huge": 0.861,
+            "base_ft": 0.8603,
+            "large_ft": 0.8924,
+            "huge_ft": 0.8772
+        },
+        "Left crystalline lens--\u5de6\u6676\u72b6\u4f53": {
+            "nnunet": 0.8195,
+            "base": 0.7833,
+            "large": 0.8226,
+            "huge": 0.7923,
+            "base_ft": 0.8181,
+            "large_ft": 0.8295,
+            "huge_ft": 0.8008
+        },
+        "Right crystalline lens--\u53f3\u6676\u72b6\u4f53": {
+            "nnunet": 0.7864,
+            "base": 0.762,
+            "large": 0.7874,
+            "huge": 0.7592,
+            "base_ft": 0.7697,
+            "large_ft": 0.8016,
+            "huge_ft": 0.7572
+        },
+        "Left optic nerve--\u5de6\u89c6\u795e\u7ecf": {
+            "nnunet": 0.7141,
+            "base": 0.695,
+            "large": 0.7154,
+            "huge": 0.704,
+            "base_ft": 0.7251,
+            "large_ft": 0.7377,
+            "huge_ft": 0.7122
+        },
+        "Right optic nerve--\u53f3\u89c6\u795e\u7ecf": {
+            "nnunet": 0.7236,
+            "base": 0.7162,
+            "large": 0.7325,
+            "huge": 0.7231,
+            "base_ft": 0.7397,
+            "large_ft": 0.7474,
+            "huge_ft": 0.7218
+        },
+        "Optic chiasm--\u89c6\u4ea4\u53c9": {
+            "nnunet": 0.6643,
+            "base": 0.6627,
+            "large": 0.6515,
+            "huge": 0.6495,
+            "base_ft": 0.6593,
+            "large_ft": 0.6592,
+            "huge_ft": 0.6298
+        },
+        "Pituitary gland--\u5782\u4f53": {
+            "nnunet": 0.7408,
+            "base": 0.7524,
+            "large": 0.7447,
+            "huge": 0.7321,
+            "base_ft": 0.7478,
+            "large_ft": 0.7393,
+            "huge_ft": 0.7246
+        },
+        "Brain--\u8111": {
+            "nnunet": 0.9766,
+            "base": 0.9757,
+            "large": 0.976,
+            "huge": 0.9757,
+            "base_ft": 0.9769,
+            "large_ft": 0.977,
+            "huge_ft": 0.9771
+        },
+        "Left hippocampus--\u6d77\u9a6c\u4f53": {
+            "nnunet": 0.4414,
+            "base": 0.4252,
+            "large": 0.4235,
+            "huge": 0.4268,
+            "base_ft": 0.4335,
+            "large_ft": 0.4343,
+            "huge_ft": 0.4131
+        },
+        "Right hippocampus--\u6d77\u9a6c\u4f53": {
+            "nnunet": 0.4903,
+            "base": 0.4645,
+            "large": 0.4607,
+            "huge": 0.4528,
+            "base_ft": 0.4951,
+            "large_ft": 0.4649,
+            "huge_ft": 0.4651
+        },
+        "Left internal auditory canal--\u5de6\u5185\u8033\u9053": {
+            "nnunet": NaN,
+            "base": NaN,
+            "large": NaN,
+            "huge": NaN,
+            "base_ft": NaN,
+            "large_ft": NaN,
+            "huge_ft": NaN
+        },
+        "Right internal auditory canal--\u53f3\u5185\u8033\u9053": {
+            "nnunet": NaN,
+            "base": NaN,
+            "large": NaN,
+            "huge": NaN,
+            "base_ft": NaN,
+            "large_ft": NaN,
+            "huge_ft": NaN
+        },
+        "Larynx--\u5589": {
+            "nnunet": 0.8862,
+            "base": 0.885,
+            "large": 0.8826,
+            "huge": 0.8838,
+            "base_ft": 0.8855,
+            "large_ft": 0.884,
+            "huge_ft": 0.8863
+        },
+        "Larynx glottis--\u58f0\u95e8": {
+            "nnunet": 0.8163,
+            "base": 0.8106,
+            "large": 0.8155,
+            "huge": 0.8189,
+            "base_ft": 0.8093,
+            "large_ft": 0.8197,
+            "huge_ft": 0.8214
+        },
+        "Larynx supraglottic--\u5589\u4e0a\u90e8": {
+            "nnunet": 0.8661,
+            "base": 0.8549,
+            "large": 0.8672,
+            "huge": 0.8655,
+            "base_ft": 0.8596,
+            "large_ft": 0.87,
+            "huge_ft": 0.8722
+        },
+        "Left mastoid--\u5de6\u4e73\u7a81": {
+            "nnunet": 0.8408,
+            "base": 0.715,
+            "large": 0.8253,
+            "huge": 0.7909,
+            "base_ft": 0.8787,
+            "large_ft": 0.8834,
+            "huge_ft": 0.8662
+        },
+        "Right mastoid--\u53f3\u4e73\u7a81": {
+            "nnunet": 0.8228,
+            "base": 0.7405,
+            "large": 0.8127,
+            "huge": 0.793,
+            "base_ft": 0.8942,
+            "large_ft": 0.8565,
+            "huge_ft": 0.8866
+        },
+        "Oral cavity--\u53e3\u8154": {
+            "nnunet": 0.9371,
+            "base": 0.9348,
+            "large": 0.9357,
+            "huge": 0.9352,
+            "base_ft": 0.9367,
+            "large_ft": 0.9372,
+            "huge_ft": 0.9377
+        },
+        "Pharynx--\u54bd": {
+            "nnunet": NaN,
+            "base": NaN,
+            "large": NaN,
+            "huge": NaN,
+            "base_ft": NaN,
+            "large_ft": NaN,
+            "huge_ft": NaN
+        },
+        "Left submandibular gland--\u5de6\u988c\u4e0b\u817a": {
+            "nnunet": 0.7698,
+            "base": 0.7308,
+            "large": 0.7612,
+            "huge": 0.7208,
+            "base_ft": 0.8056,
+            "large_ft": 0.8183,
+            "huge_ft": 0.749
+        },
+        "Right submandibular gland--\u53f3\u988c\u4e0b\u817a": {
+            "nnunet": 0.7613,
+            "base": 0.7385,
+            "large": 0.8627,
+            "huge": 0.8079,
+            "base_ft": 0.8272,
+            "large_ft": 0.8621,
+            "huge_ft": 0.8667
+        },
+        "Thyroid gland--\u7532\u72b6\u817a": {
+            "nnunet": 0.9049,
+            "base": 0.9006,
+            "large": 0.9039,
+            "huge": 0.9034,
+            "base_ft": 0.9036,
+            "large_ft": 0.9075,
+            "huge_ft": 0.9105
+        },
+        "Left cochlea--\u5de6\u8033\u8717": {
+            "nnunet": 0.2435,
+            "base": 0.2943,
+            "large": 0.3336,
+            "huge": 0.2894,
+            "base_ft": 0.5166,
+            "large_ft": 0.5207,
+            "huge_ft": 0.3946
+        },
+        "Left tympanic cavity--\u5de6\u9f13\u5ba4": {
+            "nnunet": 0.7313,
+            "base": 0.6773,
+            "large": 0.729,
+            "huge": 0.6942,
+            "base_ft": 0.7931,
+            "large_ft": 0.7867,
+            "huge_ft": 0.7974
+        },
+        "Right tympanic cavity--\u53f3\u9f13\u5ba4": {
+            "nnunet": 0.7708,
+            "base": 0.7497,
+            "large": 0.7401,
+            "huge": 0.737,
+            "base_ft": 0.8328,
+            "large_ft": 0.7887,
+            "huge_ft": 0.8019
+        },
+        "Left vestibular semicircular canal--\u5de6\u524d\u5ead\u534a\u89c4\u7ba1": {
+            "nnunet": 0.7836,
+            "base": 0.0,
+            "large": 0.785,
+            "huge": 0.7697,
+            "base_ft": 0.8481,
+            "large_ft": 0.8591,
+            "huge_ft": 0.8565
+        },
+        "Right vestibular semicircular canal--\u53f3\u524d\u5ead\u534a\u89c4\u7ba1": {
+            "nnunet": 0.7595,
+            "base": 0.0,
+            "large": 0.7422,
+            "huge": 0.7438,
+            "base_ft": 0.8385,
+            "large_ft": 0.8062,
+            "huge_ft": 0.82
+        },
+        "Right cochlea--\u53f3\u8033\u8717": {
+            "nnunet": 0.3508,
+            "base": 0.0,
+            "large": 0.0,
+            "huge": 0.5265,
+            "base_ft": 0.3712,
+            "large_ft": 0.4993,
+            "huge_ft": 0.4354
+        },
+        "Left eustachian tube--\u5de6\u8033\u54bd\u7ba1": {
+            "nnunet": 0.7086,
+            "base": 0.6493,
+            "large": 0.7159,
+            "huge": 0.6377,
+            "base_ft": 0.7727,
+            "large_ft": 0.7776,
+            "huge_ft": 0.7923
+        },
+        "Right eustachian tube--\u53f3\u8033\u54bd\u7ba1": {
+            "nnunet": 0.749,
+            "base": 0.6985,
+            "large": 0.7324,
+            "huge": 0.7121,
+            "base_ft": 0.8096,
+            "large_ft": 0.7925,
+            "huge_ft": 0.817
+        },
+        "Inferior alveolar nerve--\u4e0b\u7259\u69fd\u795e\u7ecf": {
+            "nnunet": 0.8212,
+            "base": 0.8205,
+            "large": 0.8182,
+            "huge": 0.8189,
+            "base_ft": 0.821,
+            "large_ft": 0.8257,
+            "huge_ft": 0.8226
+        },
+        "Left carotid artery--\u5de6\u9888\u52a8\u8109": {
+            "nnunet": 0.699,
+            "base": 0.6686,
+            "large": 0.7114,
+            "huge": 0.6828,
+            "base_ft": 0.6934,
+            "large_ft": 0.7217,
+            "huge_ft": 0.7097
+        },
+        "Cricopharyngeal inlet--\u5589\u54bd\u5165\u53e3": {
+            "nnunet": 0.6788,
+            "base": 0.674,
+            "large": 0.6694,
+            "huge": 0.663,
+            "base_ft": 0.6673,
+            "large_ft": 0.6625,
+            "huge_ft": 0.6635
+        },
+        "Cervical esophagus--\u9888\u90e8\u98df\u7ba1": {
+            "nnunet": 0.6275,
+            "base": 0.6114,
+            "large": 0.6263,
+            "huge": 0.5733,
+            "base_ft": 0.6209,
+            "large_ft": 0.5921,
+            "huge_ft": 0.5979
+        },
+        "Left anterior eyeball segment--\u5de6\u773c\u524d\u6bb5": {
+            "nnunet": 0.4662,
+            "base": 0.5167,
+            "large": 0.5249,
+            "huge": 0.6619,
+            "base_ft": 0.558,
+            "large_ft": 0.5369,
+            "huge_ft": 0.5386
+        },
+        "Right anterior eyeball segment--\u53f3\u773c\u524d\u6bb5": {
+            "nnunet": 0.5646,
+            "base": 0.5457,
+            "large": 0.5709,
+            "huge": 0.6569,
+            "base_ft": 0.6292,
+            "large_ft": 0.6171,
+            "huge_ft": 0.5516
+        },
+        "Left posterior eyeball segment--\u5de6\u773c\u540e\u6bb5": {
+            "nnunet": 0.5141,
+            "base": 0.6139,
+            "large": 0.6248,
+            "huge": 0.7858,
+            "base_ft": 0.6282,
+            "large_ft": 0.6761,
+            "huge_ft": 0.6608
+        },
+        "Right posterior eyeball segment--\u53f3\u773c\u540e\u6bb5": {
+            "nnunet": 0.6374,
+            "base": 0.6996,
+            "large": 0.7165,
+            "huge": 0.8216,
+            "base_ft": 0.7285,
+            "large_ft": 0.8235,
+            "huge_ft": 0.6849
+        },
+        "Left lacrimal gland--\u5de6\u6cea\u817a": {
+            "nnunet": 0.2599,
+            "base": 0.3226,
+            "large": 0.2422,
+            "huge": 0.4545,
+            "base_ft": 0.2377,
+            "large_ft": 0.3068,
+            "huge_ft": 0.2357
+        },
+        "Right lacrimal gland--\u53f3\u6cea\u817a": {
+            "nnunet": 0.4159,
+            "base": 0.5613,
+            "large": 0.4429,
+            "huge": 0.524,
+            "base_ft": 0.5247,
+            "large_ft": 0.5086,
+            "huge_ft": 0.3443
+        },
+        "Right carotid artery--\u53f3\u9888\u52a8\u8109": {
+            "nnunet": 0.7283,
+            "base": 0.6928,
+            "large": 0.7752,
+            "huge": 0.7163,
+            "base_ft": 0.7213,
+            "large_ft": 0.7879,
+            "huge_ft": 0.7512
+        },
+        "Arytenoids--\u6753\u72b6\u8f6f\u9aa8": {
+            "nnunet": 0.6112,
+            "base": 0.5372,
+            "large": 0.6215,
+            "huge": 0.6402,
+            "base_ft": 0.5859,
+            "large_ft": 0.6278,
+            "huge_ft": 0.6285
+        },
+        "Mandible--\u4e0b\u988c\u9aa8": {
+            "nnunet": 0.9449,
+            "base": 0.943,
+            "large": 0.9453,
+            "huge": 0.9457,
+            "base_ft": 0.9437,
+            "large_ft": 0.9468,
+            "huge_ft": 0.9474
+        },
+        "Buccal mucosa--\u988a\u7c98\u819c": {
+            "nnunet": 0.6561,
+            "base": 0.6545,
+            "large": 0.6587,
+            "huge": 0.6616,
+            "base_ft": 0.665,
+            "large_ft": 0.6688,
+            "huge_ft": 0.6616
+        }
+    },
+    "Others": {
+        "Posterior hippocampus--\u6d77\u9a6c\u540e\u90e8": {
+            "nnunet": 0.8838,
+            "base": 0.8806,
+            "large": 0.8838,
+            "huge": 0.8857,
+            "base_ft": 0.8816,
+            "large_ft": 0.8827,
+            "huge_ft": 0.884
+        },
+        "Portal and splenic veins--\u95e8\u9759\u8109\u548c\u813e\u9759\u8109": {
+            "nnunet": 0.7884,
+            "base": 0.7851,
+            "large": 0.7908,
+            "huge": 0.795,
+            "base_ft": 0.7896,
+            "large_ft": 0.7975,
+            "huge_ft": 0.8009
+        },
+        "Renal vein--\u80be\u9759\u8109": {
+            "nnunet": 0.8453,
+            "base": 0.8411,
+            "large": 0.8459,
+            "huge": 0.8377,
+            "base_ft": 0.8425,
+            "large_ft": 0.8461,
+            "huge_ft": 0.843
+        },
+        "Prostate/Uterus--\u524d\u5217\u817a/\u5b50\u5bab": {
+            "nnunet": 0.8428,
+            "base": 0.8427,
+            "large": 0.8417,
+            "huge": 0.8415,
+            "base_ft": 0.8422,
+            "large_ft": 0.8511,
+            "huge_ft": 0.862
+        },
+        "Postcaval vein--\u540e\u8154\u9759\u8109": {
+            "nnunet": 0.9239,
+            "base": 0.923,
+            "large": 0.9263,
+            "huge": 0.9257,
+            "base_ft": 0.9231,
+            "large_ft": 0.9269,
+            "huge_ft": 0.9282
+        },
+        "Lymph nodes--\u6dcb\u5df4\u7ed3": {
+            "nnunet": 0.4999,
+            "base": 0.5555,
+            "large": 0.5601,
+            "huge": 0.5545,
+            "base_ft": 0.6146,
+            "large_ft": 0.6198,
+            "huge_ft": 0.6384
+        },
+        "Other pathology--\u5176\u4ed6\u75c5\u7406": {
+            "nnunet": 0.2942,
+            "base": 0.1299,
+            "large": 0.1789,
+            "huge": 0.1775,
+            "base_ft": 0.1687,
+            "large_ft": 0.2275,
+            "huge_ft": 0.3227
+        },
+        "Lips--\u5507": {
+            "nnunet": 0.71,
+            "base": 0.6938,
+            "large": 0.7035,
+            "huge": 0.6846,
+            "base_ft": 0.702,
+            "large_ft": 0.6956,
+            "huge_ft": 0.7081
+        }
+    },
+    "\u76c6\u8154\u7ed3\u6784": {
+        "Prostate peripheral zone--\u524d\u5217\u817a\u5916\u5468\u5e26": {
+            "nnunet": 0.8185,
+            "base": 0.7912,
+            "large": 0.7944,
+            "huge": 0.7958,
+            "base_ft": 0.809,
+            "large_ft": 0.8073,
+            "huge_ft": 0.8167
+        },
+        "Bladder--\u8180\u80f1": {
+            "nnunet": 0.8941,
+            "base": 0.902,
+            "large": 0.913,
+            "huge": 0.9073,
+            "base_ft": 0.917,
+            "large_ft": 0.9139,
+            "huge_ft": 0.9243
+        },
+        "Uterus--\u5b50\u5bab": {
+            "nnunet": 0.7813,
+            "base": 0.7535,
+            "large": 0.7778,
+            "huge": 0.7635,
+            "base_ft": 0.7872,
+            "large_ft": 0.7998,
+            "huge_ft": 0.793
+        },
+        "Rectum--\u76f4\u80a0": {
+            "nnunet": 0.7204,
+            "base": 0.7139,
+            "large": 0.7201,
+            "huge": 0.7151,
+            "base_ft": 0.7303,
+            "large_ft": 0.7265,
+            "huge_ft": 0.7283
+        },
+        "Prostate--\u524d\u5217\u817a": {
+            "nnunet": 0.8573,
+            "base": 0.8506,
+            "large": 0.8453,
+            "huge": 0.8502,
+            "base_ft": 0.8541,
+            "large_ft": 0.8575,
+            "huge_ft": 0.8567
+        },
+        "Prostate transition zone--\u524d\u5217\u817a\u79fb\u884c\u5e26": {
+            "nnunet": 0.9083,
+            "base": 0.9006,
+            "large": 0.8976,
+            "huge": 0.9014,
+            "base_ft": 0.9044,
+            "large_ft": 0.9071,
+            "huge_ft": 0.909
+        },
+        "Prostatic urethra--\u524d\u5217\u817a\u5c3f\u9053": {
+            "nnunet": 0.7933,
+            "base": 0.7814,
+            "large": 0.7892,
+            "huge": 0.7822,
+            "base_ft": 0.7904,
+            "large_ft": 0.796,
+            "huge_ft": 0.7989
+        },
+        "Prostate anterior fibromuscular stroma--\u524d\u5217\u817a\u524d\u7ea4\u7ef4\u808c\u8089\u7ec4\u7ec7": {
+            "nnunet": 0.5071,
+            "base": 0.5068,
+            "large": 0.5015,
+            "huge": 0.4935,
+            "base_ft": 0.5094,
+            "large_ft": 0.5011,
+            "huge_ft": 0.5213
+        }
+    },
+    "Bone": {
+        "Vertebrae T9--\u80f8\u690eT9": {
+            "nnunet": 0.8984,
+            "base": 0.884,
+            "large": 0.8919,
+            "huge": 0.8894,
+            "base_ft": 0.9,
+            "large_ft": 0.9036,
+            "huge_ft": 0.9023
+        },
+        "Vertebrae C1--\u9888\u690eC1": {
+            "nnunet": 0.7835,
+            "base": 0.9303,
+            "large": 0.938,
+            "huge": 0.9392,
+            "base_ft": 0.9379,
+            "large_ft": 0.9437,
+            "huge_ft": 0.9444
+        },
+        "Vertebrae T2--\u80f8\u690eT2": {
+            "nnunet": 0.754,
+            "base": 0.7526,
+            "large": 0.7668,
+            "huge": 0.7756,
+            "base_ft": 0.7731,
+            "large_ft": 0.7853,
+            "huge_ft": 0.7916
+        },
+        "Vertebrae T3--\u80f8\u690eT3": {
+            "nnunet": 0.7655,
+            "base": 0.7887,
+            "large": 0.822,
+            "huge": 0.8101,
+            "base_ft": 0.8215,
+            "large_ft": 0.8226,
+            "huge_ft": 0.8296
+        },
+        "Vertebrae T4--\u80f8\u690eT4": {
+            "nnunet": 0.7133,
+            "base": 0.7477,
+            "large": 0.739,
+            "huge": 0.7277,
+            "base_ft": 0.7493,
+            "large_ft": 0.7947,
+            "huge_ft": 0.8112
+        },
+        "Vertebrae T5--\u80f8\u690eT5": {
+            "nnunet": 0.6617,
+            "base": 0.6499,
+            "large": 0.6404,
+            "huge": 0.6758,
+            "base_ft": 0.6794,
+            "large_ft": 0.7304,
+            "huge_ft": 0.7203
+        },
+        "Vertebrae T6--\u80f8\u690eT6": {
+            "nnunet": 0.6003,
+            "base": 0.5946,
+            "large": 0.5995,
+            "huge": 0.6108,
+            "base_ft": 0.6146,
+            "large_ft": 0.6235,
+            "huge_ft": 0.6209
+        },
+        "Vertebrae T7--\u80f8\u690eT7": {
+            "nnunet": 0.586,
+            "base": 0.5857,
+            "large": 0.5852,
+            "huge": 0.5863,
+            "base_ft": 0.5857,
+            "large_ft": 0.5928,
+            "huge_ft": 0.5963
+        },
+        "Vertebrae T8--\u80f8\u690eT8": {
+            "nnunet": 0.6037,
+            "base": 0.6057,
+            "large": 0.6139,
+            "huge": 0.6112,
+            "base_ft": 0.6037,
+            "large_ft": 0.6095,
+            "huge_ft": 0.6088
+        },
+        "Vertebrae T10--\u80f8\u690eT10": {
+            "nnunet": 0.6227,
+            "base": 0.6191,
+            "large": 0.6242,
+            "huge": 0.6197,
+            "base_ft": 0.619,
+            "large_ft": 0.6182,
+            "huge_ft": 0.6211
+        },
+        "Vertebrae T11--\u80f8\u690eT11": {
+            "nnunet": 0.6009,
+            "base": 0.6,
+            "large": 0.6055,
+            "huge": 0.5985,
+            "base_ft": 0.6064,
+            "large_ft": 0.6042,
+            "huge_ft": 0.6089
+        },
+        "Vertebrae T12--\u80f8\u690eT12": {
+            "nnunet": 0.5959,
+            "base": 0.6021,
+            "large": 0.6034,
+            "huge": 0.5959,
+            "base_ft": 0.6011,
+            "large_ft": 0.6059,
+            "huge_ft": 0.6083
+        },
+        "Vertebrae C2--\u9888\u690eC2": {
+            "nnunet": 0.9513,
+            "base": 0.9484,
+            "large": 0.9519,
+            "huge": 0.9521,
+            "base_ft": 0.9503,
+            "large_ft": 0.9525,
+            "huge_ft": 0.9533
+        },
+        "Vertebrae L1--\u8170\u690eL1": {
+            "nnunet": 0.6321,
+            "base": 0.6315,
+            "large": 0.6242,
+            "huge": 0.6215,
+            "base_ft": 0.6275,
+            "large_ft": 0.6333,
+            "huge_ft": 0.6279
+        },
+        "Vertebrae L2--\u8170\u690eL2": {
+            "nnunet": 0.6299,
+            "base": 0.6317,
+            "large": 0.6274,
+            "huge": 0.6245,
+            "base_ft": 0.6339,
+            "large_ft": 0.64,
+            "huge_ft": 0.6316
+        },
+        "Vertebrae L3--\u8170\u690eL3": {
+            "nnunet": 0.619,
+            "base": 0.6147,
+            "large": 0.6159,
+            "huge": 0.6161,
+            "base_ft": 0.6226,
+            "large_ft": 0.6279,
+            "huge_ft": 0.6253
+        },
+        "Vertebrae L4--\u8170\u690eL4": {
+            "nnunet": 0.611,
+            "base": 0.6095,
+            "large": 0.6135,
+            "huge": 0.6099,
+            "base_ft": 0.6137,
+            "large_ft": 0.6212,
+            "huge_ft": 0.6203
+        },
+        "Vertebrae L5--\u8170\u690eL5": {
+            "nnunet": 0.5898,
+            "base": 0.5921,
+            "large": 0.5852,
+            "huge": 0.5854,
+            "base_ft": 0.5937,
+            "large_ft": 0.597,
+            "huge_ft": 0.5997
+        },
+        "Vertebrae L6--\u8170\u690eL6": {
+            "nnunet": 0.1498,
+            "base": 0.224,
+            "large": 0.2308,
+            "huge": 0.19,
+            "base_ft": 0.2159,
+            "large_ft": 0.2529,
+            "huge_ft": 0.2367
+        },
+        "Vertebrae C3--\u9888\u690eC3": {
+            "nnunet": 0.8186,
+            "base": 0.8896,
+            "large": 0.8917,
+            "huge": 0.8941,
+            "base_ft": 0.8931,
+            "large_ft": 0.9391,
+            "huge_ft": 0.9392
+        },
+        "Vertebrae C4--\u9888\u690eC4": {
+            "nnunet": 0.7286,
+            "base": 0.804,
+            "large": 0.8004,
+            "huge": 0.805,
+            "base_ft": 0.8121,
+            "large_ft": 0.7899,
+            "huge_ft": 0.8115
+        },
+        "Vertebrae C5--\u9888\u690eC5": {
+            "nnunet": 0.6622,
+            "base": 0.7519,
+            "large": 0.7709,
+            "huge": 0.759,
+            "base_ft": 0.7827,
+            "large_ft": 0.7766,
+            "huge_ft": 0.7593
+        },
+        "Vertebrae C6--\u9888\u690eC6": {
+            "nnunet": 0.5911,
+            "base": 0.6036,
+            "large": 0.6569,
+            "huge": 0.691,
+            "base_ft": 0.6654,
+            "large_ft": 0.7168,
+            "huge_ft": 0.7177
+        },
+        "Vertebrae C7--\u9888\u690eC7": {
+            "nnunet": 0.6896,
+            "base": 0.7098,
+            "large": 0.7375,
+            "huge": 0.7317,
+            "base_ft": 0.7221,
+            "large_ft": 0.7389,
+            "huge_ft": 0.7393
+        },
+        "Vertebrae T1--\u80f8\u690eT1": {
+            "nnunet": 0.7639,
+            "base": 0.8318,
+            "large": 0.8394,
+            "huge": 0.8362,
+            "base_ft": 0.834,
+            "large_ft": 0.8238,
+            "huge_ft": 0.8231
+        },
+        "Vertebrae T13--\u80f8\u690eT13": {
+            "nnunet": 0.8177,
+            "base": 0.8592,
+            "large": 0.8668,
+            "huge": 0.8532,
+            "base_ft": 0.8643,
+            "large_ft": 0.8663,
+            "huge_ft": 0.8692
+        },
+        "Left femoral head--\u5de6\u80a1\u9aa8\u5934": {
+            "nnunet": 0.441,
+            "base": 0.6182,
+            "large": 0.6976,
+            "huge": 0.6224,
+            "base_ft": 0.6747,
+            "large_ft": 0.7911,
+            "huge_ft": 0.7628
+        },
+        "Right femoral head--\u53f3\u80a1\u9aa8\u5934": {
+            "nnunet": 0.5836,
+            "base": 0.7587,
+            "large": 0.8384,
+            "huge": 0.7526,
+            "base_ft": 0.7423,
+            "large_ft": 0.8581,
+            "huge_ft": 0.8476
+        },
+        "Sacrum--\u9ab6\u9aa8": {
+            "nnunet": 0.9818,
+            "base": 0.9816,
+            "large": 0.9819,
+            "huge": 0.9814,
+            "base_ft": 0.9806,
+            "large_ft": 0.9808,
+            "huge_ft": 0.9805
+        },
+        "Right hip--\u53f3\u9acb": {
+            "nnunet": 0.6446,
+            "base": 0.4947,
+            "large": 0.5464,
+            "huge": 0.6297,
+            "base_ft": 0.8272,
+            "large_ft": 0.8599,
+            "huge_ft": 0.8566
+        },
+        "Left hip--\u5de6\u9acb": {
+            "nnunet": 0.1156,
+            "base": 0.4889,
+            "large": 0.4089,
+            "huge": 0.3342,
+            "base_ft": 0.8477,
+            "large_ft": 0.8643,
+            "huge_ft": 0.8747
+        },
+        "Lumbar vertebra--\u8170\u690e": {
+            "nnunet": 0.8677,
+            "base": 0.866,
+            "large": 0.8679,
+            "huge": 0.8608,
+            "base_ft": 0.8677,
+            "large_ft": 0.8707,
+            "huge_ft": 0.8698
+        },
+        "Left temporomandibular joint--\u5de6\u989e\u4e0b\u988c\u5173\u8282": {
+            "nnunet": 0.7491,
+            "base": 0.74,
+            "large": 0.7794,
+            "huge": 0.7094,
+            "base_ft": 0.7925,
+            "large_ft": 0.8099,
+            "huge_ft": 0.7927
+        },
+        "Right temporomandibular joint--\u53f3\u989e\u4e0b\u988c\u5173\u8282": {
+            "nnunet": 0.8025,
+            "base": 0.7538,
+            "large": 0.7988,
+            "huge": 0.7709,
+            "base_ft": 0.8618,
+            "large_ft": 0.8291,
+            "huge_ft": 0.8222
+        },
+        "Left mandible--\u5de6\u4e0b\u988c\u9aa8": {
+            "nnunet": 0.8133,
+            "base": 0.6979,
+            "large": 0.8788,
+            "huge": 0.8336,
+            "base_ft": 0.7966,
+            "large_ft": 0.8755,
+            "huge_ft": 0.8436
+        },
+        "Right mandible--\u53f3\u4e0b\u988c\u9aa8": {
+            "nnunet": 0.8366,
+            "base": 0.7677,
+            "large": 0.884,
+            "huge": 0.861,
+            "base_ft": 0.8603,
+            "large_ft": 0.8924,
+            "huge_ft": 0.8772
+        },
+        "Left mastoid--\u5de6\u4e73\u7a81": {
+            "nnunet": 0.8408,
+            "base": 0.715,
+            "large": 0.8253,
+            "huge": 0.7909,
+            "base_ft": 0.8787,
+            "large_ft": 0.8834,
+            "huge_ft": 0.8662
+        },
+        "Right mastoid--\u53f3\u4e73\u7a81": {
+            "nnunet": 0.8228,
+            "base": 0.7405,
+            "large": 0.8127,
+            "huge": 0.793,
+            "base_ft": 0.8942,
+            "large_ft": 0.8565,
+            "huge_ft": 0.8866
+        },
+        "Mandible--\u4e0b\u988c\u9aa8": {
+            "nnunet": 0.9449,
+            "base": 0.943,
+            "large": 0.9453,
+            "huge": 0.9457,
+            "base_ft": 0.9437,
+            "large_ft": 0.9468,
+            "huge_ft": 0.9474
+        }
+    },
+    "Vessel": {
+        "Hepatic vessels--\u809d\u8840\u7ba1": {
+            "nnunet": 0.6746,
+            "base": 0.6798,
+            "large": 0.6781,
+            "huge": 0.6859,
+            "base_ft": 0.6752,
+            "large_ft": 0.68,
+            "huge_ft": 0.6778
+        },
+        "Aorta--\u4e3b\u52a8\u8109": {
+            "nnunet": 0.9056,
+            "base": 0.9024,
+            "large": 0.9126,
+            "huge": 0.9076,
+            "base_ft": 0.91,
+            "large_ft": 0.9176,
+            "huge_ft": 0.9173
+        },
+        "Inferior vena cava--\u4e0b\u8154\u9759\u8109": {
+            "nnunet": 0.8802,
+            "base": 0.8873,
+            "large": 0.8822,
+            "huge": 0.884,
+            "base_ft": 0.8872,
+            "large_ft": 0.9047,
+            "huge_ft": 0.894
+        },
+        "Renal artery--\u80be\u52a8\u8109": {
+            "nnunet": 0.87,
+            "base": 0.8694,
+            "large": 0.8685,
+            "huge": 0.8684,
+            "base_ft": 0.8763,
+            "large_ft": 0.8748,
+            "huge_ft": 0.883
+        },
+        "Pulmonary artery--\u80ba\u52a8\u8109": {
+            "nnunet": 0.8629,
+            "base": 0.8625,
+            "large": 0.863,
+            "huge": 0.8647,
+            "base_ft": 0.8594,
+            "large_ft": 0.8634,
+            "huge_ft": 0.8628
+        },
+        "Portal vein--\u95e8\u9759\u8109": {
+            "nnunet": 0.2769,
+            "base": 0.2777,
+            "large": 0.2634,
+            "huge": 0.2637,
+            "base_ft": 0.292,
+            "large_ft": 0.2836,
+            "huge_ft": 0.283
+        },
+        "Cerebral artery--\u8111\u52a8\u8109": {
+            "nnunet": 0.8618,
+            "base": 0.8636,
+            "large": 0.8621,
+            "huge": 0.86,
+            "base_ft": 0.8651,
+            "large_ft": 0.8657,
+            "huge_ft": 0.865
+        },
+        "Ascending aorta--\u5347\u4e3b\u52a8\u8109": {
+            "nnunet": 0.898,
+            "base": 0.8891,
+            "large": 0.8957,
+            "huge": 0.8794,
+            "base_ft": 0.8973,
+            "large_ft": 0.9146,
+            "huge_ft": 0.9003
+        },
+        "Left anterior descending artery--\u5de6\u524d\u964d\u652f\u52a8\u8109": {
+            "nnunet": 0.1409,
+            "base": 0.0723,
+            "large": 0.1081,
+            "huge": 0.143,
+            "base_ft": 0.0792,
+            "large_ft": 0.1858,
+            "huge_ft": 0.1758
+        },
+        "Left circumflex artery--\u5de6\u56de\u65cb\u652f\u52a8\u8109": {
+            "nnunet": 0.0,
+            "base": 0.0,
+            "large": 0.0,
+            "huge": 0.0,
+            "base_ft": 0.0,
+            "large_ft": 0.1545,
+            "huge_ft": 0.0
+        },
+        "Right coronary artery--\u53f3\u51a0\u72b6\u52a8\u8109": {
+            "nnunet": 0.0,
+            "base": 0.0,
+            "large": 0.0,
+            "huge": 0.0,
+            "base_ft": 0.6935,
+            "large_ft": 0.7937,
+            "huge_ft": 0.8971
+        },
+        "Left carotid artery--\u5de6\u9888\u52a8\u8109": {
+            "nnunet": 0.699,
+            "base": 0.6686,
+            "large": 0.7114,
+            "huge": 0.6828,
+            "base_ft": 0.6934,
+            "large_ft": 0.7217,
+            "huge_ft": 0.7097
+        },
+        "Right carotid artery--\u53f3\u9888\u52a8\u8109": {
+            "nnunet": 0.7283,
+            "base": 0.6928,
+            "large": 0.7752,
+            "huge": 0.7163,
+            "base_ft": 0.7213,
+            "large_ft": 0.7879,
+            "huge_ft": 0.7512
+        }
+    },
+    "\u80a2\u4f53\u7ed3\u6784": {
+        "Vertebrae C1--\u9888\u690eC1": {
+            "nnunet": 0.7835,
+            "base": 0.9303,
+            "large": 0.938,
+            "huge": 0.9392,
+            "base_ft": 0.9379,
+            "large_ft": 0.9437,
+            "huge_ft": 0.9444
+        },
+        "Vertebrae C2--\u9888\u690eC2": {
+            "nnunet": 0.9513,
+            "base": 0.9484,
+            "large": 0.9519,
+            "huge": 0.9521,
+            "base_ft": 0.9503,
+            "large_ft": 0.9525,
+            "huge_ft": 0.9533
+        },
+        "Vertebrae L1--\u8170\u690eL1": {
+            "nnunet": 0.6321,
+            "base": 0.6315,
+            "large": 0.6242,
+            "huge": 0.6215,
+            "base_ft": 0.6275,
+            "large_ft": 0.6333,
+            "huge_ft": 0.6279
+        },
+        "Vertebrae L2--\u8170\u690eL2": {
+            "nnunet": 0.6299,
+            "base": 0.6317,
+            "large": 0.6274,
+            "huge": 0.6245,
+            "base_ft": 0.6339,
+            "large_ft": 0.64,
+            "huge_ft": 0.6316
+        },
+        "Vertebrae L3--\u8170\u690eL3": {
+            "nnunet": 0.619,
+            "base": 0.6147,
+            "large": 0.6159,
+            "huge": 0.6161,
+            "base_ft": 0.6226,
+            "large_ft": 0.6279,
+            "huge_ft": 0.6253
+        },
+        "Vertebrae L4--\u8170\u690eL4": {
+            "nnunet": 0.611,
+            "base": 0.6095,
+            "large": 0.6135,
+            "huge": 0.6099,
+            "base_ft": 0.6137,
+            "large_ft": 0.6212,
+            "huge_ft": 0.6203
+        },
+        "Vertebrae L5--\u8170\u690eL5": {
+            "nnunet": 0.5898,
+            "base": 0.5921,
+            "large": 0.5852,
+            "huge": 0.5854,
+            "base_ft": 0.5937,
+            "large_ft": 0.597,
+            "huge_ft": 0.5997
+        },
+        "Vertebrae L6--\u8170\u690eL6": {
+            "nnunet": 0.1498,
+            "base": 0.224,
+            "large": 0.2308,
+            "huge": 0.19,
+            "base_ft": 0.2159,
+            "large_ft": 0.2529,
+            "huge_ft": 0.2367
+        },
+        "Vertebrae C3--\u9888\u690eC3": {
+            "nnunet": 0.8186,
+            "base": 0.8896,
+            "large": 0.8917,
+            "huge": 0.8941,
+            "base_ft": 0.8931,
+            "large_ft": 0.9391,
+            "huge_ft": 0.9392
+        },
+        "Vertebrae C4--\u9888\u690eC4": {
+            "nnunet": 0.7286,
+            "base": 0.804,
+            "large": 0.8004,
+            "huge": 0.805,
+            "base_ft": 0.8121,
+            "large_ft": 0.7899,
+            "huge_ft": 0.8115
+        },
+        "Vertebrae C5--\u9888\u690eC5": {
+            "nnunet": 0.6622,
+            "base": 0.7519,
+            "large": 0.7709,
+            "huge": 0.759,
+            "base_ft": 0.7827,
+            "large_ft": 0.7766,
+            "huge_ft": 0.7593
+        },
+        "Vertebrae C6--\u9888\u690eC6": {
+            "nnunet": 0.5911,
+            "base": 0.6036,
+            "large": 0.6569,
+            "huge": 0.691,
+            "base_ft": 0.6654,
+            "large_ft": 0.7168,
+            "huge_ft": 0.7177
+        },
+        "Vertebrae C7--\u9888\u690eC7": {
+            "nnunet": 0.6896,
+            "base": 0.7098,
+            "large": 0.7375,
+            "huge": 0.7317,
+            "base_ft": 0.7221,
+            "large_ft": 0.7389,
+            "huge_ft": 0.7393
+        },
+        "Left femoral head--\u5de6\u80a1\u9aa8\u5934": {
+            "nnunet": 0.441,
+            "base": 0.6182,
+            "large": 0.6976,
+            "huge": 0.6224,
+            "base_ft": 0.6747,
+            "large_ft": 0.7911,
+            "huge_ft": 0.7628
+        },
+        "Right femoral head--\u53f3\u80a1\u9aa8\u5934": {
+            "nnunet": 0.5836,
+            "base": 0.7587,
+            "large": 0.8384,
+            "huge": 0.7526,
+            "base_ft": 0.7423,
+            "large_ft": 0.8581,
+            "huge_ft": 0.8476
+        },
+        "Sacrum--\u9ab6\u9aa8": {
+            "nnunet": 0.9818,
+            "base": 0.9816,
+            "large": 0.9819,
+            "huge": 0.9814,
+            "base_ft": 0.9806,
+            "large_ft": 0.9808,
+            "huge_ft": 0.9805
+        },
+        "Right hip--\u53f3\u9acb": {
+            "nnunet": 0.6446,
+            "base": 0.4947,
+            "large": 0.5464,
+            "huge": 0.6297,
+            "base_ft": 0.8272,
+            "large_ft": 0.8599,
+            "huge_ft": 0.8566
+        },
+        "Left hip--\u5de6\u9acb": {
+            "nnunet": 0.1156,
+            "base": 0.4889,
+            "large": 0.4089,
+            "huge": 0.3342,
+            "base_ft": 0.8477,
+            "large_ft": 0.8643,
+            "huge_ft": 0.8747
+        },
+        "Lumbar vertebra--\u8170\u690e": {
+            "nnunet": 0.8677,
+            "base": 0.866,
+            "large": 0.8679,
+            "huge": 0.8608,
+            "base_ft": 0.8677,
+            "large_ft": 0.8707,
+            "huge_ft": 0.8698
+        }
+    },
+    "\u5176\u4ed6\u7ed3\u6784": {
+        "Necrosis--\u574f\u75bd": {
+            "nnunet": 0.7393,
+            "base": 0.7414,
+            "large": 0.7467,
+            "huge": 0.7406,
+            "base_ft": 0.7376,
+            "large_ft": 0.743,
+            "huge_ft": 0.7457
+        }
+    }
+}
