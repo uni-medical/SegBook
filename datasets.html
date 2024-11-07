@@ -5,16 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datasets - SegBook</title>
     <link rel="stylesheet" href="static/css/styles.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        .datasets-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .dataset-box {
+            flex: 1 1 calc(33.333% - 16px);
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px 0;
+            overflow: hidden;
+            min-height: 250px;
+        }
+        .dataset-box h3 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .dataset-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <!-- <h1>SegBook</h1>
-        <p>Medical Segmentation CookBook</p> -->
-    </header>
+    <header></header>
     <nav>
         <a href="index.html">Home</a>
         <a href="datasets.html">Datasets</a>
@@ -29,7 +48,7 @@
                 <input type="text" id="searchInput" placeholder="Search Datasets..." onkeyup="searchDatasets()">
             </div>
             <div class="datasets-grid" id="datasetsGrid">
-                <!-- Dataset Boxes -->
+                <!-- Dataset boxes here -->
                 <div class="dataset-box">
                     <h3>Task704_ToothFairy2023</h3>
                     <p>ToothFairy2023</p>
@@ -725,25 +744,7 @@
                     <a href="https://github.com/openmedlab/Awesome-Medical-Dataset/blob/main/resources/TDSC-ABUS2023.md" target="_blank">View Dataset (English)</a><br>
                     <a href="https://tdsc-abus2023.grand-challenge.org/Dataset/" target="_blank">Dataset Homepage</a>
                 </div>
-                
-                <div class="dataset-box">
-                    <h3></h3>
-                    <p></p>
-                    <a href="" target="_blank">View Dataset (Chinese)</a><br>
-                    <a href="" target="_blank">View Dataset (English)</a><br>
-                    <a href="" target="_blank">Dataset Homepage</a>
-                </div>
-                
-                <div class="dataset-box">
-                    <h3></h3>
-                    <p></p>
-                    <a href="" target="_blank">View Dataset (Chinese)</a><br>
-                    <a href="" target="_blank">View Dataset (English)</a><br>
-                    <a href="" target="_blank">Dataset Homepage</a>
-                </div>
-                <!-- Add more dataset boxes as needed -->
             </div>
-            <!-- Additional Information Section -->
             <div class="more-info">
                 <p>For more information about the datasets, please visit the following link:</p>
                 <a href="https://zhuanlan.zhihu.com/p/661132213" target="_blank" class="more-info-link">Learn More About Datasets on Zhihu</a>
@@ -756,7 +757,9 @@
             const datasetBoxes = document.querySelectorAll('.dataset-box');
             datasetBoxes.forEach(box => {
                 const title = box.querySelector('h3').textContent.toLowerCase();
-                if (title.includes(input)) {
+                const description = box.querySelector('p').textContent.toLowerCase();
+                const links = Array.from(box.querySelectorAll('a')).map(link => link.textContent.toLowerCase()).join(' ');
+                if (title.includes(input) || description.includes(input) || links.includes(input)) {
                     box.style.display = '';
                 } else {
                     box.style.display = 'none';
