@@ -26,7 +26,8 @@ for csv_file in os.listdir(csv_directory):
         df.columns = new_columns
         
         # Calculate the average value for each row (ignoring the first column)
-        df['Average'] = df.iloc[:, 1:].mean(axis=1)  # Capitalize 'average'
+        # 小数点保留4位数
+        df['Average'] = df.iloc[:, 1:].mean(axis=1).round(4)
         
         # Convert DataFrame to list of lists (for compatibility with the HTML display)
         data = [df.columns.tolist()] + df.values.tolist()
