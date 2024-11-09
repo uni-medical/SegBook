@@ -5,37 +5,58 @@
         "Average"
     ],
     [
-        "base",
+        {
+            "name": "STU-Net-B",
+            "link": "https://github.com/uni-medical/STU-Net"
+        },
         0.7414,
         0.7414
     ],
     [
-        "base_ft",
+        {
+            "name": "STU-Net-B-ft",
+            "link": "https://github.com/uni-medical/STU-Net"
+        },
         0.7376,
         0.7376
     ],
     [
-        "huge",
+        {
+            "name": "STU-Net-H",
+            "link": "https://github.com/uni-medical/STU-Net"
+        },
         0.7406,
         0.7406
     ],
     [
-        "huge_ft",
+        {
+            "name": "STU-Net-H-ft",
+            "link": "https://github.com/uni-medical/STU-Net"
+        },
         0.7457,
         0.7457
     ],
     [
-        "large",
+        {
+            "name": "STU-Net-L",
+            "link": "https://github.com/uni-medical/STU-Net"
+        },
         0.7467,
         0.7467
     ],
     [
-        "large_ft",
+        {
+            "name": "STU-Net-L-ft",
+            "link": "https://github.com/uni-medical/STU-Net"
+        },
         0.743,
         0.743
     ],
     [
-        "nnunet",
+        {
+            "name": "nn-UNet",
+            "link": "https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1"
+        },
         0.7393,
         0.7393
     ]

@@ -42,7 +42,16 @@ function populateTable() {
         const tr = document.createElement('tr');
         row.forEach(cell => {
             const td = document.createElement('td');
-            td.textContent = cell;
+            if (typeof cell === 'object' && cell.name && cell.link) {
+                // If the cell contains a name and link, create an anchor element
+                const a = document.createElement('a');
+                a.href = cell.link;
+                a.textContent = cell.name;
+                a.target = '_blank'; // Open link in a new tab
+                td.appendChild(a);
+            } else {
+                td.textContent = cell;
+            }
             tr.appendChild(td);
         });
         tbody.appendChild(tr);

@@ -13,7 +13,10 @@
         "Disease"
     ],
     [
-        "nnunet",
+        {
+            "name": "nn-UNet",
+            "link": "https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1"
+        },
         0.6894,
         0.5999,
         0.6364,
@@ -26,7 +29,10 @@
         0.607
     ],
     [
-        "base",
+        {
+            "name": "STU-Net-B",
+            "link": "https://github.com/uni-medical/STU-Net"
+        },
         0.7084,
         0.5897,
         0.6921,
@@ -39,7 +45,10 @@
         0.6043
     ],
     [
-        "large",
+        {
+            "name": "STU-Net-L",
+            "link": "https://github.com/uni-medical/STU-Net"
+        },
         0.731,
         0.6016,
         0.7045,
@@ -52,7 +61,10 @@
         0.6121
     ],
     [
-        "huge",
+        {
+            "name": "STU-Net-H",
+            "link": "https://github.com/uni-medical/STU-Net"
+        },
         0.7204,
         0.5966,
         0.6948,
@@ -65,7 +77,10 @@
         0.6035
     ],
     [
-        "base_ft",
+        {
+            "name": "STU-Net-B-ft",
+            "link": "https://github.com/uni-medical/STU-Net"
+        },
         0.7511,
         0.65,
         0.7374,
@@ -78,7 +93,10 @@
         0.6334
     ],
     [
-        "large_ft",
+        {
+            "name": "STU-Net-L-ft",
+            "link": "https://github.com/uni-medical/STU-Net"
+        },
         0.7674,
         0.6883,
         0.7608,
@@ -91,7 +109,10 @@
         0.6426
     ],
     [
-        "huge_ft",
+        {
+            "name": "STU-Net-H-ft",
+            "link": "https://github.com/uni-medical/STU-Net"
+        },
         0.7653,
         0.6782,
         0.7578,

@@ -14,6 +14,28 @@ output_directory = './static/data/json_segbook'
 # Dictionary to store the average values for each file
 summary_data = {}
 
+# Replacement mapping
+replacement_mapping = {
+    'nnunet': 'nn-UNet',
+    'base': 'STU-Net-B',
+    'large': 'STU-Net-L',
+    'huge': 'STU-Net-H',
+    'base_ft': 'STU-Net-B-ft',
+    'large_ft': 'STU-Net-L-ft',
+    'huge_ft': 'STU-Net-H-ft'
+}
+
+# Links for models
+model_links = {
+    'nn-UNet': 'https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1',
+    'STU-Net-B': 'https://github.com/uni-medical/STU-Net',
+    'STU-Net-L': 'https://github.com/uni-medical/STU-Net',
+    'STU-Net-H': 'https://github.com/uni-medical/STU-Net',
+    'STU-Net-B-ft': 'https://github.com/uni-medical/STU-Net',
+    'STU-Net-L-ft': 'https://github.com/uni-medical/STU-Net',
+    'STU-Net-H-ft': 'https://github.com/uni-medical/STU-Net'
+}
+
 # Loop through each CSV file in the directory
 for csv_file in os.listdir(csv_directory):
     if csv_file.endswith('.csv'):
@@ -25,12 +47,23 @@ for csv_file in os.listdir(csv_directory):
         new_columns = [re.sub(r'--.*', '', col).strip() for col in df.columns]
         df.columns = new_columns
         
+        # Replace elements in the first column based on the mapping
+        df.iloc[:, 0] = df.iloc[:, 0].replace(replacement_mapping)
+        
         # Calculate the average value for each row (ignoring the first column)
-        # 小数点保留4位数
         df['Average'] = df.iloc[:, 1:].mean(axis=1).round(4)
         
         # Convert DataFrame to list of lists (for compatibility with the HTML display)
         data = [df.columns.tolist()] + df.values.tolist()
+        
+        # Add links to the model names
+        for i in range(1, len(data)):
+            model_name = data[i][0]
+            if model_name in model_links:
+                data[i][0] = {
+                    "name": model_name,
+                    "link": model_links[model_name]
+                }
         
         # Construct JSON file name from CSV name
         json_file_name = os.path.splitext(csv_file)[0] + '.json'
@@ -54,6 +87,11 @@ main_leaderboard = [['Evaluation'] + list(summary_data[next(iter(summary_data))]
 
 for model_name, averages in summary_data.items():
     row = [model_name] + [round(averages[part], 4) for part in main_leaderboard[0][1:]]
+    if model_name in model_links:
+        row[0] = {
+            "name": model_name,
+            "link": model_links[model_name]
+        }
     main_leaderboard.append(row)
 
 # Save the main leaderboard to a JSON file

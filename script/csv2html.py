@@ -11,16 +11,14 @@ with open(csv_file_path, newline='', encoding='utf-8-sig') as csvfile:
     reader = csv.DictReader(csvfile, delimiter=',')  # 使用逗号作为分隔符
     # print(reader.fieldnames)
     for row in reader:
-        benchmark_name = row['benchmark名字']
-        dataset_name = row['数据集名称']
+        display_name = row['展示数据集名字']
         chinese_link = row['中文链接']
         english_link = row['英文链接']
         homepage_link = row['数据集主页']
         
         html_code += f"""
         <div class="dataset-box">
-            <h3>{benchmark_name}</h3>
-            <p>{dataset_name}</p>
+            <h3>{display_name}</h3>
             <a href="{chinese_link}" target="_blank">View Dataset (Chinese)</a><br>
             <a href="{english_link}" target="_blank">View Dataset (English)</a><br>
             <a href="{homepage_link}" target="_blank">Dataset Homepage</a>
